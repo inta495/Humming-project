@@ -1,0 +1,746 @@
+<!DOCTYPE html>
+<!-- saved from url=(0092)https://review.px4.io/plot_app?log=0a77386a-9556-4f00-9fc8-1c9846701184#Nav-Local-Position-Y -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <title>Flight Review - Quadrotor</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="./log_0_2017-9-6-18-41-40_files/css" rel="stylesheet" type="text/css">
+	<link href="./log_0_2017-9-6-18-41-40_files/css(1)" rel="stylesheet" type="text/css">
+    <link href="./log_0_2017-9-6-18-41-40_files/bootstrap.min.css" rel="stylesheet">
+    <link href="./log_0_2017-9-6-18-41-40_files/font-awesome.min.css" rel="stylesheet">
+    <link href="./log_0_2017-9-6-18-41-40_files/animate.min.css" rel="stylesheet"> 
+	<link href="./log_0_2017-9-6-18-41-40_files/main.css" rel="stylesheet">
+
+    
+<link rel="stylesheet" href="./log_0_2017-9-6-18-41-40_files/bokeh.min.css" type="text/css">
+<link rel="stylesheet" href="./log_0_2017-9-6-18-41-40_files/bokeh-widgets.min.css" type="text/css">
+    
+<script type="text/javascript" src="./log_0_2017-9-6-18-41-40_files/bokeh.min.js.download"></script>
+<script type="text/javascript" src="./log_0_2017-9-6-18-41-40_files/bokeh-widgets.min.js.download"></script>
+<script type="text/javascript" src="./log_0_2017-9-6-18-41-40_files/bokeh-gl.min.js.download"></script>
+<script type="text/javascript">
+    Bokeh.set_log_level("info");
+</script>
+  <style type="text/css" rel="stylesheet">.slickgrid_374943 .bk-slick-header-column { left: 1000px; } .slickgrid_374943 .bk-slick-top-panel { height:25px; } .slickgrid_374943 .bk-slick-headerrow-columns { height:25px; } .slickgrid_374943 .bk-slick-cell { height:20px; } .slickgrid_374943 .bk-slick-row { height:25px; } .slickgrid_374943 .l0 { } .slickgrid_374943 .r0 { } .slickgrid_374943 .l1 { } .slickgrid_374943 .r1 { } .slickgrid_374943 .l2 { } .slickgrid_374943 .r2 { } .slickgrid_374943 .l3 { } .slickgrid_374943 .r3 { } .slickgrid_374943 .l4 { } .slickgrid_374943 .r4 { } .slickgrid_374943 .l5 { } .slickgrid_374943 .r5 { } .slickgrid_374943 .l6 { } .slickgrid_374943 .r6 { }</style><style type="text/css" rel="stylesheet">.slickgrid_419679 .bk-slick-header-column { left: 1000px; } .slickgrid_419679 .bk-slick-top-panel { height:25px; } .slickgrid_419679 .bk-slick-headerrow-columns { height:25px; } .slickgrid_419679 .bk-slick-cell { height:20px; } .slickgrid_419679 .bk-slick-row { height:25px; } .slickgrid_419679 .l0 { } .slickgrid_419679 .r0 { } .slickgrid_419679 .l1 { } .slickgrid_419679 .r1 { } .slickgrid_419679 .l2 { } .slickgrid_419679 .r2 { } .slickgrid_419679 .l3 { } .slickgrid_419679 .r3 { }</style><style type="text/css" rel="stylesheet">.slickgrid_633056 .bk-slick-header-column { left: 1000px; } .slickgrid_633056 .bk-slick-top-panel { height:25px; } .slickgrid_633056 .bk-slick-headerrow-columns { height:25px; } .slickgrid_633056 .bk-slick-cell { height:20px; } .slickgrid_633056 .bk-slick-row { height:25px; } .slickgrid_633056 .l0 { } .slickgrid_633056 .r0 { } .slickgrid_633056 .l1 { } .slickgrid_633056 .r1 { } .slickgrid_633056 .l2 { } .slickgrid_633056 .r2 { } .slickgrid_633056 .l3 { } .slickgrid_633056 .r3 { } .slickgrid_633056 .l4 { } .slickgrid_633056 .r4 { } .slickgrid_633056 .l5 { } .slickgrid_633056 .r5 { } .slickgrid_633056 .l6 { } .slickgrid_633056 .r6 { }</style><style type="text/css" rel="stylesheet">.slickgrid_376847 .bk-slick-header-column { left: 1000px; } .slickgrid_376847 .bk-slick-top-panel { height:25px; } .slickgrid_376847 .bk-slick-headerrow-columns { height:25px; } .slickgrid_376847 .bk-slick-cell { height:20px; } .slickgrid_376847 .bk-slick-row { height:25px; } .slickgrid_376847 .l0 { } .slickgrid_376847 .r0 { } .slickgrid_376847 .l1 { } .slickgrid_376847 .r1 { } .slickgrid_376847 .l2 { } .slickgrid_376847 .r2 { } .slickgrid_376847 .l3 { } .slickgrid_376847 .r3 { }</style><style type="text/css" rel="stylesheet">.slickgrid_833934 .bk-slick-header-column { left: 1000px; } .slickgrid_833934 .bk-slick-top-panel { height:25px; } .slickgrid_833934 .bk-slick-headerrow-columns { height:25px; } .slickgrid_833934 .bk-slick-cell { height:20px; } .slickgrid_833934 .bk-slick-row { height:25px; } .slickgrid_833934 .l0 { } .slickgrid_833934 .r0 { } .slickgrid_833934 .l1 { } .slickgrid_833934 .r1 { } .slickgrid_833934 .l2 { } .slickgrid_833934 .r2 { } .slickgrid_833934 .l3 { } .slickgrid_833934 .r3 { } .slickgrid_833934 .l4 { } .slickgrid_833934 .r4 { } .slickgrid_833934 .l5 { } .slickgrid_833934 .r5 { } .slickgrid_833934 .l6 { } .slickgrid_833934 .r6 { }</style><style type="text/css" rel="stylesheet">.slickgrid_307415 .bk-slick-header-column { left: 1000px; } .slickgrid_307415 .bk-slick-top-panel { height:25px; } .slickgrid_307415 .bk-slick-headerrow-columns { height:25px; } .slickgrid_307415 .bk-slick-cell { height:20px; } .slickgrid_307415 .bk-slick-row { height:25px; } .slickgrid_307415 .l0 { } .slickgrid_307415 .r0 { } .slickgrid_307415 .l1 { } .slickgrid_307415 .r1 { } .slickgrid_307415 .l2 { } .slickgrid_307415 .r2 { } .slickgrid_307415 .l3 { } .slickgrid_307415 .r3 { }</style></head>
+  <body style="max-width: 900px; width: 75%;">
+
+
+	<header id="header" style="top: -86px;">
+        <div class="navbar navbar-inverse" role="banner">
+            <div class="col-xs-">
+                <div class="navbar-header">
+
+					<div class="navbar-brand">
+						<h1>
+							<a href="http://px4.io/">
+								<img src="./log_0_2017-9-6-18-41-40_files/logo.png" alt="logo">
+							</a>
+							<span class="name">Flight Review</span>
+						</h1>
+					</div>
+                    
+                </div>
+                <div class="col-xs-">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li _class="active"><a href="https://review.px4.io/upload">Upload</a></li>
+
+                        <li><a href="https://review.px4.io/browse">Browse</a></li>
+
+
+                        <li class="dropdown" id="download-menu"><a href="javascript:;">Download <i class="fa fa-angle-down"></i></a>
+                            <ul role="menu" class="sub-menu">
+                                <li><a href="https://review.px4.io/download?log=0a77386a-9556-4f00-9fc8-1c9846701184">Log File</a></li>
+                                <li><a href="https://review.px4.io/download?log=0a77386a-9556-4f00-9fc8-1c9846701184&amp;type=1" target="_blank">Parameters</a></li>
+                                <li><a href="https://review.px4.io/download?log=0a77386a-9556-4f00-9fc8-1c9846701184&amp;type=3" target="_blank">Parameters (non-default)</a></li>
+
+                            </ul>
+                        </li>                    
+                        <li class="dropdown" id="navigation-menu"><a href="javascript:;">Navigation <i class="fa fa-angle-down"></i></a>
+                            <ul role="menu" class="sub-menu" id="ul-fragments">
+
+
+
+	<li><a href="javascript:navigate(&#39;Nav-Altitude-Estimate&#39;);">Altitude Estimate</a></li>
+
+
+
+	<li><a href="javascript:navigate(&#39;Nav-Roll-Angle&#39;);">Roll Angle</a></li>
+
+
+
+	<li><a href="javascript:navigate(&#39;Nav-Roll-Angular-Rate&#39;);">Roll Angular Rate</a></li>
+
+
+
+	<li><a href="javascript:navigate(&#39;Nav-Pitch-Angle&#39;);">Pitch Angle</a></li>
+
+
+
+	<li><a href="javascript:navigate(&#39;Nav-Pitch-Angular-Rate&#39;);">Pitch Angular Rate</a></li>
+
+
+
+	<li><a href="javascript:navigate(&#39;Nav-Yaw-Angle&#39;);">Yaw Angle</a></li>
+
+
+
+	<li><a href="javascript:navigate(&#39;Nav-Yaw-Angular-Rate&#39;);">Yaw Angular Rate</a></li>
+
+
+
+	<li><a href="javascript:navigate(&#39;Nav-Local-Position-X&#39;);">Local Position X</a></li>
+
+
+
+	<li><a href="javascript:navigate(&#39;Nav-Local-Position-Y&#39;);">Local Position Y</a></li>
+
+
+
+	<li><a href="javascript:navigate(&#39;Nav-Local-Position-Z&#39;);">Local Position Z</a></li>
+
+
+
+	<li><a href="javascript:navigate(&#39;Nav-Velocity&#39;);">Velocity</a></li>
+
+
+
+	<li><a href="javascript:navigate(&#39;Nav-Raw-Radio-Control-Inputs&#39;);">Raw Radio Control Inputs</a></li>
+
+
+
+	<li><a href="javascript:navigate(&#39;Nav-Actuator-Controls-0&#39;);">Actuator Controls 0</a></li>
+
+
+
+	<li><a href="javascript:navigate(&#39;Nav-Actuator-Outputs-Main&#39;);">Actuator Outputs (Main)</a></li>
+
+
+
+	<li><a href="javascript:navigate(&#39;Nav-Raw-Acceleration&#39;);">Raw Acceleration</a></li>
+
+
+
+	<li><a href="javascript:navigate(&#39;Nav-Raw-Angular-Speed-Gyroscope&#39;);">Raw Angular Speed (Gyroscope)</a></li>
+
+
+
+	<li><a href="javascript:navigate(&#39;Nav-Raw-Magnetic-Field-Strength&#39;);">Raw Magnetic Field Strength</a></li>
+
+
+
+	<li><a href="javascript:navigate(&#39;Nav-GPS-Uncertainty&#39;);">GPS Uncertainty</a></li>
+
+
+
+	<li><a href="javascript:navigate(&#39;Nav-GPS-Noise-_-Jamming&#39;);">GPS Noise &amp; Jamming</a></li>
+
+
+
+	<li><a href="javascript:navigate(&#39;Nav-Thrust-and-Magnetic-Field&#39;);">Thrust and Magnetic Field</a></li>
+
+
+
+	<li><a href="javascript:navigate(&#39;Nav-Power&#39;);">Power</a></li>
+
+
+
+	<li><a href="javascript:navigate(&#39;Nav-Estimator-Watchdog&#39;);">Estimator Watchdog</a></li>
+
+
+
+	<li><a href="javascript:navigate(&#39;Nav-RC-Quality&#39;);">RC Quality</a></li>
+
+
+
+	<li><a href="javascript:navigate(&#39;Nav-CPU-_-RAM&#39;);">CPU &amp; RAM</a></li>
+
+
+
+	<li><a href="javascript:navigate(&#39;Nav-Sampling-Regularity-of-Sensor-Data&#39;);">Sampling Regularity of Sensor Data</a></li>
+
+                            </ul>
+                        </li>
+                        <li class="dropdown" id="size-menu"><a href="javascript:;">Size <i class="fa fa-angle-down"></i></a>
+                            <ul role="menu" class="sub-menu">
+                                <li><a id="size-small-menu" href="javascript:setSize(&#39;small&#39;);">Small</a></li>
+                                <li><a class="active" id="size-medium-menu" href="javascript:setSize(&#39;medium&#39;);">Normal</a></li>
+                                <li><a id="size-large-menu" href="javascript:setSize(&#39;large&#39;);" class="">Large</a></li>
+                                <li><a id="size-xlarge-menu" href="javascript:setSize(&#39;xlarge&#39;);" class="">Extra Large</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown" id="plot-legend-menu"><a href="javascript:;">Plot Legend <i class="fa fa-angle-down"></i></a>
+                            <ul role="menu" class="sub-menu">
+								<li><a href="javascript:;"><b>Flight Modes:</b></a></li>
+
+
+
+                                <li><a href="javascript:;">
+								<div class="plot-legend-box" style="border-left-color: rgba(204, 0, 0, 0.15);">Manual</div></a></li>
+
+
+
+                                <li><a href="javascript:;">
+								<div class="plot-legend-box" style="border-left-color: rgba(238, 204, 0, 0.15);">Altitude Control</div></a></li>
+
+
+
+                                <li><a href="javascript:;">
+								<div class="plot-legend-box" style="border-left-color: rgba(0, 204, 51, 0.15);">Position Control</div></a></li>
+
+
+
+                                <li><a href="javascript:;">
+								<div class="plot-legend-box" style="border-left-color: rgba(102, 204, 0, 0.15);">Acro</div></a></li>
+
+
+
+                                <li><a href="javascript:;">
+								<div class="plot-legend-box" style="border-left-color: rgba(0, 51, 204, 0.15);">Stabilized</div></a></li>
+
+
+
+                                <li><a href="javascript:;">
+								<div class="plot-legend-box" style="border-left-color: rgba(0, 204, 204, 0.15);">Offboard</div></a></li>
+
+
+
+                                <li><a href="javascript:;">
+								<div class="plot-legend-box" style="border-left-color: rgba(238, 153, 0, 0.15);">Rattitude</div></a></li>
+
+
+
+                                <li><a href="javascript:;">
+								<div class="plot-legend-box" style="border-left-color: rgba(102, 0, 204, 0.15);">Auto (Mission, RTL, Follow, ...)</div></a></li>
+
+								<li><a href="javascript:;"><b>VTOL Modes:</b></a></li>
+
+
+
+                                <li><a href="javascript:;">
+								<div class="plot-legend-box" style="border-left-color: rgba(204, 0, 0, 0.15);">Transition</div></a></li>
+
+
+
+                                <li><a href="javascript:;">
+								<div class="plot-legend-box" style="border-left-color: rgba(238, 204, 0, 0.15);">Fixed-Wing</div></a></li>
+
+
+
+                                <li><a href="javascript:;">
+								<div class="plot-legend-box" style="border-left-color: rgba(0, 51, 204, 0.15);">Multicopter</div></a></li>
+
+                            </ul>
+                        </li>
+
+						<!--
+                        <li><a href="about">About</a></li>
+						-->
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="content">
+
+
+
+
+
+
+<div id="loading-plots" style="height: 50px; display: none;"><p><big>Loading Plots...</big></p></div>
+
+
+
+        <div class="bk-root">
+            <div class="bk-plotdiv" id="64c9b6fb-0d68-4c78-bfb4-d6ce25fadaa4"><div id="59DEDEE23FF4407691071A0450B05F69" class="bk-grid-column bk-layout-scale_width" style="position: relative; width: 844px; height: 9545.3px;"><div id="F20496F20E344052A793E21EE969C628" class="bk-widget-box bk-layout-scale_width" style="width: 824px;"><div id="E9B03ADB936840E38EAA5B8D1F2DC542" class="bk-widget bk-layout-fixed" style="width: 756px;"><div class="bk-markup"><div><h1>PX4 Quadrotor</h1></div></div></div><div id="7921707C33AC416C9AE4E3776A5C3E89" class="bk-widget bk-layout-fixed"><div class="bk-markup"><div><div style="display: flex; justify-content: space-between;"><table><tbody><tr><td class="left">Airframe:</td><td>4100</td></tr><tr><td class="left">Hardware:</td><td>PX4FMU_V2</td></tr><tr><td class="left">Software Version:</td><td><a href="https://github.com/PX4/Firmware/commit/dcb9ca159e1f5ded99e878f068de40401b5582ca" target="_blank">dcb9ca15</a><br> branch: master</td></tr><tr><td class="left">OS Version:</td><td>NuttX, v7.18.0</td></tr><tr><td class="left">Estimator:</td><td>EKF2</td></tr><tr><td style="padding-top: 0.5em;" class="left">Logging Start:</td><td style="padding-top: 0.5em;"><span style="" id="logging-start-element">06-09-2017 18:40</span>
+<script type="text/javascript">
+    var logging_span = $('#logging-start-element');
+    var d = new Date(0);
+    d.setUTCSeconds(logging_span.text());
+    var date_str = ("0" + d.getDate()).slice(-2) + "-" +
+                   ("0"+(d.getMonth()+1)).slice(-2) + "-" + d.getFullYear() + " " +
+                   ("0" + d.getHours()).slice(-2) + ":" + ("0" + d.getMinutes()).slice(-2);
+    logging_span.text(date_str);
+    logging_span.show();
+</script>
+</td></tr><tr><td class="left">Logging Duration:</td><td>0:00:41</td></tr><tr><td class="left">Dropouts:</td><td>5 (0.24 s)</td></tr><tr><td class="left">Vehicle Flight Time:</td><td>23 minutes 59 seconds </td></tr><tr><td style="padding-top: 0.5em;" class="left">Vehicle UUID:</td><td style="padding-top: 0.5em;">003100253435511631323634</td></tr></tbody></table><table data-toggle="tooltip" delay="{show: 500, hide: 100}" title="Note: most of these values are based on estimations from the vehicle, and thus requiring an accurate estimator"><tbody><tr><td class="left">Max Altitude Difference:</td><td>0 m</td></tr><tr><td style="padding-top: 0.5em;" class="left">Max Tilt Angle:</td><td style="padding-top: 0.5em;">2.1 deg</td></tr><tr><td class="left">Max Rotation Speed:</td><td>2.2 deg/s</td></tr><tr><td style="padding-top: 0.5em;" class="left">Average Current:</td><td style="padding-top: 0.5em;">1.0 A</td></tr><tr><td class="left">Max Current:</td><td>2.0 A</td></tr></tbody></table></div></div></div></div></div><div id="2C553A5A8C2A48CAABFE3CB3AADFBB80" class="bk-plot-layout bk-layout-scale_width" style="position: relative; width: 844px; height: 401.905px;"><div id="86C8B5F4A9FC4D20B7F911E248E878C0" class="bk-toolbar-wrapper" style="left: 814px; top: 28.964px; width: 30px; height: 372.941px;"><div class="bk-toolbar-right bk-toolbar-sticky"><div class="bk-button-bar"><div class="bk-button-bar-list" type="pan"><div id="55093CA6D0E641A1A2E25DD4FFE13EE6" class="bk-toolbar-button bk-active"><div class="bk-btn-icon bk-tool-icon-pan"></div><span class="bk-tip">Pan</span></div><div id="31C5316912EE4DC0AA18759390F17065" class="bk-toolbar-button"><div class="bk-btn-icon bk-tool-icon-box-zoom"></div><span class="bk-tip">Box Zoom</span></div></div><div class="bk-button-bar-list" type="scroll"><div id="9DC27C46388B4C8F90883DD416118503" class="bk-toolbar-button bk-active"><div class="bk-btn-icon bk-tool-icon-wheel-zoom"></div><span class="bk-tip">Wheel Zoom</span></div></div><div class="bk-button-bar-list" type="pinch"></div><div class="bk-button-bar-list" type="tap"></div><div class="bk-button-bar-list" type="press"></div><div class="bk-button-bar-list" type="rotate"></div><div class="bk-button-bar-list" type="actions"><div id="21482890C3804FDA9E05F4CB8E0703B6" class="bk-toolbar-button"><div class="bk-btn-icon bk-tool-icon-reset"></div><span class="bk-tip">Reset</span></div><div id="A7719CED70534201BD7E9A4452352DCE" class="bk-toolbar-button"><div class="bk-btn-icon bk-tool-icon-save"></div><span class="bk-tip">Save</span></div></div><div class="bk-button-bar-list" type="inspectors"></div><div class="bk-button-bar-list" type="help"></div></div></div></div><div id="4721BD5BDD804900AA6A115FAA1D7358" class="bk-plot-wrapper" style="position: absolute; left: 0px; top: 0px; width: 844px; height: 401.905px;"><div id="E806685A00C543ED847FEF4B2100523E" class="bk-canvas-wrapper" style="touch-action: none; user-select: none; -webkit-user-drag: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); width: 844px; height: 401.905px; cursor: default;"><div class="bk-canvas-events"></div><div class="bk-canvas-overlays"><div id="631BCBC9F2B84291A97822F5FBA9B4B8" class="bk-shading" style="display: none;"></div><div id="011265FABB8C48B9816F52042D65DF06" class="bk-shading" style="display: none;"></div></div><a id="Nav-Altitude-Estimate" class="fragment bk-plot-layout" href="https://review.px4.io/plot_app?log=0a77386a-9556-4f00-9fc8-1c9846701184#Nav-Altitude-Estimate"><big>¶</big></a><canvas class="bk-canvas" width="844" height="401.90476190476187" style="width: 844px; height: 401.905px;"></canvas></div></div></div><div id="2CBCE56DCECD47B6A2C73E566BF20BC0" class="bk-plot-layout bk-layout-scale_width" style="position: relative; width: 844px; height: 337.6px;"><div id="5178005ABA114689BEA50500A1BF0730" class="bk-toolbar-wrapper" style="left: 814px; top: 28.964px; width: 30px; height: 308.636px;"><div class="bk-toolbar-right bk-toolbar-sticky"><div class="bk-button-bar"><div class="bk-button-bar-list" type="pan"><div id="3C322EFF70A34A6D91950B5792D915D3" class="bk-toolbar-button bk-active"><div class="bk-btn-icon bk-tool-icon-pan"></div><span class="bk-tip">Pan</span></div><div id="F8A2B881758447B4B3227D40801DE1EF" class="bk-toolbar-button"><div class="bk-btn-icon bk-tool-icon-box-zoom"></div><span class="bk-tip">Box Zoom</span></div></div><div class="bk-button-bar-list" type="scroll"><div id="68B383CD6991419E96FD1717BAA4FB19" class="bk-toolbar-button bk-active"><div class="bk-btn-icon bk-tool-icon-wheel-zoom"></div><span class="bk-tip">Wheel Zoom</span></div></div><div class="bk-button-bar-list" type="pinch"></div><div class="bk-button-bar-list" type="tap"></div><div class="bk-button-bar-list" type="press"></div><div class="bk-button-bar-list" type="rotate"></div><div class="bk-button-bar-list" type="actions"><div id="3E83F971BCDB464190D6B73BA84051E3" class="bk-toolbar-button"><div class="bk-btn-icon bk-tool-icon-reset"></div><span class="bk-tip">Reset</span></div><div id="B1EFECC117914DE296AD72018E01DEF6" class="bk-toolbar-button"><div class="bk-btn-icon bk-tool-icon-save"></div><span class="bk-tip">Save</span></div></div><div class="bk-button-bar-list" type="inspectors"></div><div class="bk-button-bar-list" type="help"></div></div></div></div><div id="103F1EFD4261402D899FC1D8B7BD936A" class="bk-plot-wrapper" style="position: absolute; left: 0px; top: 0px; width: 844px; height: 337.6px;"><div id="13B742BF20544B359DFA83EB38004567" class="bk-canvas-wrapper" style="touch-action: none; user-select: none; -webkit-user-drag: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); width: 844px; height: 337.6px; cursor: default;"><div class="bk-canvas-events"></div><div class="bk-canvas-overlays"><div id="E2442C039BE049B192F6063FDB72A092" class="bk-shading" style="display: none;"></div><div id="26579A316F404A99BBD39B71E8363C39" class="bk-shading" style="display: none;"></div></div><a id="Nav-Roll-Angle" class="fragment bk-plot-layout" href="https://review.px4.io/plot_app?log=0a77386a-9556-4f00-9fc8-1c9846701184#Nav-Roll-Angle"><big>¶</big></a><canvas class="bk-canvas" width="844" height="337.6" style="width: 844px; height: 337.6px;"></canvas></div></div></div><div id="F0C0565CCE32468DAB804FD77EAE00C9" class="bk-plot-layout bk-layout-scale_width" style="position: relative; width: 844px; height: 337.6px;"><div id="2F9EE92C935A4C7EA9AC0F3553E5A45B" class="bk-toolbar-wrapper" style="left: 814px; top: 28.964px; width: 30px; height: 308.636px;"><div class="bk-toolbar-right bk-toolbar-sticky"><div class="bk-button-bar"><div class="bk-button-bar-list" type="pan"><div id="D684DEDF268F44938C10582FD4BDB9A0" class="bk-toolbar-button bk-active"><div class="bk-btn-icon bk-tool-icon-pan"></div><span class="bk-tip">Pan</span></div><div id="4432A2F66C6545CC93DFC02D3059F05A" class="bk-toolbar-button"><div class="bk-btn-icon bk-tool-icon-box-zoom"></div><span class="bk-tip">Box Zoom</span></div></div><div class="bk-button-bar-list" type="scroll"><div id="2BE8070A5924450396B0918FAFAE68C4" class="bk-toolbar-button bk-active"><div class="bk-btn-icon bk-tool-icon-wheel-zoom"></div><span class="bk-tip">Wheel Zoom</span></div></div><div class="bk-button-bar-list" type="pinch"></div><div class="bk-button-bar-list" type="tap"></div><div class="bk-button-bar-list" type="press"></div><div class="bk-button-bar-list" type="rotate"></div><div class="bk-button-bar-list" type="actions"><div id="561090D1E85D459B8CBBCA24E891A56E" class="bk-toolbar-button"><div class="bk-btn-icon bk-tool-icon-reset"></div><span class="bk-tip">Reset</span></div><div id="F6C141CE23B34A3883F01F946D473461" class="bk-toolbar-button"><div class="bk-btn-icon bk-tool-icon-save"></div><span class="bk-tip">Save</span></div></div><div class="bk-button-bar-list" type="inspectors"></div><div class="bk-button-bar-list" type="help"></div></div></div></div><div id="92EDCB024133413CABFF9938B10A4573" class="bk-plot-wrapper" style="position: absolute; left: 0px; top: 0px; width: 844px; height: 337.6px;"><div id="EF45C6F7EB064BCBBDF496D524D6E9BC" class="bk-canvas-wrapper" style="touch-action: none; user-select: none; -webkit-user-drag: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); width: 844px; height: 337.6px;"><div class="bk-canvas-events"></div><div class="bk-canvas-overlays"><div id="F05C8216718E44938D0B7B16B2CD694B" class="bk-shading" style="display: none;"></div><div id="008C7144A5144BF6A7BCEAB39735C777" class="bk-shading" style="display: none;"></div></div><a id="Nav-Roll-Angular-Rate" class="fragment bk-plot-layout" href="https://review.px4.io/plot_app?log=0a77386a-9556-4f00-9fc8-1c9846701184#Nav-Roll-Angular-Rate"><big>¶</big></a><canvas class="bk-canvas" width="844" height="337.6" style="width: 844px; height: 337.6px;"></canvas></div></div></div><div id="971C73B9A31D4C43AFDCC9C925AD0CEA" class="bk-plot-layout bk-layout-scale_width" style="position: relative; width: 844px; height: 337.6px;"><div id="4E98FB146CA447318592A219C7894CC2" class="bk-toolbar-wrapper" style="left: 814px; top: 28.964px; width: 30px; height: 308.636px;"><div class="bk-toolbar-right bk-toolbar-sticky"><div class="bk-button-bar"><div class="bk-button-bar-list" type="pan"><div id="DDF46A21805941FAA67307C3983C6739" class="bk-toolbar-button bk-active"><div class="bk-btn-icon bk-tool-icon-pan"></div><span class="bk-tip">Pan</span></div><div id="8E179C9AB45F416E9E2D96AAD19EAFFE" class="bk-toolbar-button"><div class="bk-btn-icon bk-tool-icon-box-zoom"></div><span class="bk-tip">Box Zoom</span></div></div><div class="bk-button-bar-list" type="scroll"><div id="7D23A61C1C01437D843B9DB5F5FCDD91" class="bk-toolbar-button bk-active"><div class="bk-btn-icon bk-tool-icon-wheel-zoom"></div><span class="bk-tip">Wheel Zoom</span></div></div><div class="bk-button-bar-list" type="pinch"></div><div class="bk-button-bar-list" type="tap"></div><div class="bk-button-bar-list" type="press"></div><div class="bk-button-bar-list" type="rotate"></div><div class="bk-button-bar-list" type="actions"><div id="700A5BCA13A84F65A14798C603AE33CE" class="bk-toolbar-button"><div class="bk-btn-icon bk-tool-icon-reset"></div><span class="bk-tip">Reset</span></div><div id="D969049E39D044159D1A6E05567A291D" class="bk-toolbar-button"><div class="bk-btn-icon bk-tool-icon-save"></div><span class="bk-tip">Save</span></div></div><div class="bk-button-bar-list" type="inspectors"></div><div class="bk-button-bar-list" type="help"></div></div></div></div><div id="2F0ACA6874234DBAB57945F7F041DFA9" class="bk-plot-wrapper" style="position: absolute; left: 0px; top: 0px; width: 844px; height: 337.6px;"><div id="B6361B15986D43489D29D9DCBEEBDCA0" class="bk-canvas-wrapper" style="touch-action: none; user-select: none; -webkit-user-drag: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); width: 844px; height: 337.6px;"><div class="bk-canvas-events"></div><div class="bk-canvas-overlays"><div id="6560D6858C7B4E1EA54BE98A7AD5552A" class="bk-shading" style="display: none;"></div><div id="164BE412A6D7413DB9A47E32A8B78ABC" class="bk-shading" style="display: none;"></div></div><a id="Nav-Pitch-Angle" class="fragment bk-plot-layout" href="https://review.px4.io/plot_app?log=0a77386a-9556-4f00-9fc8-1c9846701184#Nav-Pitch-Angle"><big>¶</big></a><canvas class="bk-canvas" width="844" height="337.6" style="width: 844px; height: 337.6px;"></canvas></div></div></div><div id="894D341330914E18921415416E547106" class="bk-plot-layout bk-layout-scale_width" style="position: relative; width: 844px; height: 337.6px;"><div id="171709C762894A5F91C68EDFD2912B87" class="bk-toolbar-wrapper" style="left: 814px; top: 28.964px; width: 30px; height: 308.636px;"><div class="bk-toolbar-right bk-toolbar-sticky"><div class="bk-button-bar"><div class="bk-button-bar-list" type="pan"><div id="2C6B691F878041BEBFC88980E1A9DDD8" class="bk-toolbar-button bk-active"><div class="bk-btn-icon bk-tool-icon-pan"></div><span class="bk-tip">Pan</span></div><div id="A85A139904864E558A967F80C88CF944" class="bk-toolbar-button"><div class="bk-btn-icon bk-tool-icon-box-zoom"></div><span class="bk-tip">Box Zoom</span></div></div><div class="bk-button-bar-list" type="scroll"><div id="6CDBAEDE20B64D029EA200A23EC8E32A" class="bk-toolbar-button bk-active"><div class="bk-btn-icon bk-tool-icon-wheel-zoom"></div><span class="bk-tip">Wheel Zoom</span></div></div><div class="bk-button-bar-list" type="pinch"></div><div class="bk-button-bar-list" type="tap"></div><div class="bk-button-bar-list" type="press"></div><div class="bk-button-bar-list" type="rotate"></div><div class="bk-button-bar-list" type="actions"><div id="B009C64C3F5C489A967D14D530BC2AA4" class="bk-toolbar-button"><div class="bk-btn-icon bk-tool-icon-reset"></div><span class="bk-tip">Reset</span></div><div id="F16E52F645B24F549974B4DD7E7EE929" class="bk-toolbar-button"><div class="bk-btn-icon bk-tool-icon-save"></div><span class="bk-tip">Save</span></div></div><div class="bk-button-bar-list" type="inspectors"></div><div class="bk-button-bar-list" type="help"></div></div></div></div><div id="BFB5058F9ED84A29BD8C23BED5146E9E" class="bk-plot-wrapper" style="position: absolute; left: 0px; top: 0px; width: 844px; height: 337.6px;"><div id="CFF4113EFECD402FA1CD465E652808EA" class="bk-canvas-wrapper" style="touch-action: none; user-select: none; -webkit-user-drag: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); width: 844px; height: 337.6px;"><div class="bk-canvas-events"></div><div class="bk-canvas-overlays"><div id="6C5A7DEA0F9246CFB15125A496BF70AB" class="bk-shading" style="display: none;"></div><div id="2EBBE4CF70D04824936AD09C99ED5155" class="bk-shading" style="display: none;"></div></div><a id="Nav-Pitch-Angular-Rate" class="fragment bk-plot-layout" href="https://review.px4.io/plot_app?log=0a77386a-9556-4f00-9fc8-1c9846701184#Nav-Pitch-Angular-Rate"><big>¶</big></a><canvas class="bk-canvas" width="844" height="337.6" style="width: 844px; height: 337.6px;"></canvas></div></div></div><div id="AA63735065BE4077AEF93AFF1FB28305" class="bk-plot-layout bk-layout-scale_width" style="position: relative; width: 844px; height: 337.6px;"><div id="DCFDD85EDDD34BA2B6E454DC0E8E9B49" class="bk-toolbar-wrapper" style="left: 814px; top: 28.964px; width: 30px; height: 308.636px;"><div class="bk-toolbar-right bk-toolbar-sticky"><div class="bk-button-bar"><div class="bk-button-bar-list" type="pan"><div id="B3756B5AA96043CD8E9A7E02269E39E4" class="bk-toolbar-button bk-active"><div class="bk-btn-icon bk-tool-icon-pan"></div><span class="bk-tip">Pan</span></div><div id="DFD87F1C92FD427DB81034CC25A825D1" class="bk-toolbar-button"><div class="bk-btn-icon bk-tool-icon-box-zoom"></div><span class="bk-tip">Box Zoom</span></div></div><div class="bk-button-bar-list" type="scroll"><div id="0E8285E9C5004B3D9422A7076C75268D" class="bk-toolbar-button bk-active"><div class="bk-btn-icon bk-tool-icon-wheel-zoom"></div><span class="bk-tip">Wheel Zoom</span></div></div><div class="bk-button-bar-list" type="pinch"></div><div class="bk-button-bar-list" type="tap"></div><div class="bk-button-bar-list" type="press"></div><div class="bk-button-bar-list" type="rotate"></div><div class="bk-button-bar-list" type="actions"><div id="F91D439F53AF44C5BBC84F8B40291068" class="bk-toolbar-button"><div class="bk-btn-icon bk-tool-icon-reset"></div><span class="bk-tip">Reset</span></div><div id="D334B64991DB431C9483B6EFB43C1714" class="bk-toolbar-button"><div class="bk-btn-icon bk-tool-icon-save"></div><span class="bk-tip">Save</span></div></div><div class="bk-button-bar-list" type="inspectors"></div><div class="bk-button-bar-list" type="help"></div></div></div></div><div id="E556E62CE55B4B95AA1DCCA54A74263D" class="bk-plot-wrapper" style="position: absolute; left: 0px; top: 0px; width: 844px; height: 337.6px;"><div id="B18CFC9B408B43FD82F5B3D3DC2BFF94" class="bk-canvas-wrapper" style="touch-action: none; user-select: none; -webkit-user-drag: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); width: 844px; height: 337.6px;"><div class="bk-canvas-events"></div><div class="bk-canvas-overlays"><div id="E6458BF99B8648A2AD547171FB26F9B3" class="bk-shading" style="display: none;"></div><div id="43EFD0DEF160449F8D6E67AE85676D1E" class="bk-shading" style="display: none;"></div></div><a id="Nav-Yaw-Angle" class="fragment bk-plot-layout" href="https://review.px4.io/plot_app?log=0a77386a-9556-4f00-9fc8-1c9846701184#Nav-Yaw-Angle"><big>¶</big></a><canvas class="bk-canvas" width="844" height="337.6" style="width: 844px; height: 337.6px;"></canvas></div></div></div><div id="C5CAC0A4A690479EAE280E5B5C447FB0" class="bk-plot-layout bk-layout-scale_width" style="position: relative; width: 844px; height: 337.6px;"><div id="D88F8A7E05F64EFE8875CF4346F00EC4" class="bk-toolbar-wrapper" style="left: 814px; top: 28.964px; width: 30px; height: 308.636px;"><div class="bk-toolbar-right bk-toolbar-sticky"><div class="bk-button-bar"><div class="bk-button-bar-list" type="pan"><div id="9CAB3C9D988A4849B654B38A7DCAB132" class="bk-toolbar-button bk-active"><div class="bk-btn-icon bk-tool-icon-pan"></div><span class="bk-tip">Pan</span></div><div id="E65C24ECDD634780B2C7E21E9D66F297" class="bk-toolbar-button"><div class="bk-btn-icon bk-tool-icon-box-zoom"></div><span class="bk-tip">Box Zoom</span></div></div><div class="bk-button-bar-list" type="scroll"><div id="1C4B378C9BE34DC6A67DFE2699DAFB06" class="bk-toolbar-button bk-active"><div class="bk-btn-icon bk-tool-icon-wheel-zoom"></div><span class="bk-tip">Wheel Zoom</span></div></div><div class="bk-button-bar-list" type="pinch"></div><div class="bk-button-bar-list" type="tap"></div><div class="bk-button-bar-list" type="press"></div><div class="bk-button-bar-list" type="rotate"></div><div class="bk-button-bar-list" type="actions"><div id="1EC7071BFF7844E0A04B1F503E2698F0" class="bk-toolbar-button"><div class="bk-btn-icon bk-tool-icon-reset"></div><span class="bk-tip">Reset</span></div><div id="AA441DE786DD4EBFAC9AE12F28EFAC30" class="bk-toolbar-button"><div class="bk-btn-icon bk-tool-icon-save"></div><span class="bk-tip">Save</span></div></div><div class="bk-button-bar-list" type="inspectors"></div><div class="bk-button-bar-list" type="help"></div></div></div></div><div id="37122EBF2D7846649DB252B0D32906A6" class="bk-plot-wrapper" style="position: absolute; left: 0px; top: 0px; width: 844px; height: 337.6px;"><div id="51C4613EAB734E89ADB6F097802CDC4C" class="bk-canvas-wrapper" style="touch-action: none; user-select: none; -webkit-user-drag: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); width: 844px; height: 337.6px;"><div class="bk-canvas-events"></div><div class="bk-canvas-overlays"><div id="4CDD61F2D2D14D9BACA36AE8E28DD13F" class="bk-shading" style="display: none;"></div><div id="148186C7F38040FBB20F2C8ABFE0D2B6" class="bk-shading" style="display: none;"></div></div><a id="Nav-Yaw-Angular-Rate" class="fragment bk-plot-layout" href="https://review.px4.io/plot_app?log=0a77386a-9556-4f00-9fc8-1c9846701184#Nav-Yaw-Angular-Rate"><big>¶</big></a><canvas class="bk-canvas" width="844" height="337.6" style="width: 844px; height: 337.6px;"></canvas></div></div></div><div id="D2D63302E3E44F099E43B30A138C20B0" class="bk-plot-layout bk-layout-scale_width" style="position: relative; width: 844px; height: 337.6px;"><div id="B719A202281A47D5A696E98AE0F0321D" class="bk-toolbar-wrapper" style="left: 814px; top: 28.964px; width: 30px; height: 308.636px;"><div class="bk-toolbar-right bk-toolbar-sticky"><div class="bk-button-bar"><div class="bk-button-bar-list" type="pan"><div id="13F7BDA3F2EB4C97AA881F7E9F5AFB37" class="bk-toolbar-button bk-active"><div class="bk-btn-icon bk-tool-icon-pan"></div><span class="bk-tip">Pan</span></div><div id="5400EFE4015E4B07B9A5F45AB83CA59D" class="bk-toolbar-button"><div class="bk-btn-icon bk-tool-icon-box-zoom"></div><span class="bk-tip">Box Zoom</span></div></div><div class="bk-button-bar-list" type="scroll"><div id="6B0852BB76DD408C9D60A5A4CA45F8E1" class="bk-toolbar-button bk-active"><div class="bk-btn-icon bk-tool-icon-wheel-zoom"></div><span class="bk-tip">Wheel Zoom</span></div></div><div class="bk-button-bar-list" type="pinch"></div><div class="bk-button-bar-list" type="tap"></div><div class="bk-button-bar-list" type="press"></div><div class="bk-button-bar-list" type="rotate"></div><div class="bk-button-bar-list" type="actions"><div id="C0BBDACD6D9C402E93889A9B73FAD5B3" class="bk-toolbar-button"><div class="bk-btn-icon bk-tool-icon-reset"></div><span class="bk-tip">Reset</span></div><div id="5B147555DD1C40EF962A91DE3D5A233C" class="bk-toolbar-button"><div class="bk-btn-icon bk-tool-icon-save"></div><span class="bk-tip">Save</span></div></div><div class="bk-button-bar-list" type="inspectors"></div><div class="bk-button-bar-list" type="help"></div></div></div></div><div id="DF3719A16E4B4B49AE1A0ABA1071D865" class="bk-plot-wrapper" style="position: absolute; left: 0px; top: 0px; width: 844px; height: 337.6px;"><div id="A1A6451146C44B8985715915D6FFFBB5" class="bk-canvas-wrapper" style="touch-action: none; user-select: none; -webkit-user-drag: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); width: 844px; height: 337.6px;"><div class="bk-canvas-events"></div><div class="bk-canvas-overlays"><div id="D56A2C144DC7435B8FE4B0B87E97547E" class="bk-shading" style="display: none;"></div><div id="E16D606E3408444EA77FC3F5B0977E69" class="bk-shading" style="display: none;"></div></div><a id="Nav-Local-Position-X" class="fragment bk-plot-layout" href="https://review.px4.io/plot_app?log=0a77386a-9556-4f00-9fc8-1c9846701184#Nav-Local-Position-X"><big>¶</big></a><canvas class="bk-canvas" width="844" height="337.6" style="width: 844px; height: 337.6px;"></canvas></div></div></div><div id="3AE785F352F6467281CB1C0C3722C52D" class="bk-plot-layout bk-layout-scale_width" style="position: relative; width: 844px; height: 337.6px;"><div id="68E6548B2F2A4CFC908639A55D14F9B5" class="bk-toolbar-wrapper" style="left: 814px; top: 28.964px; width: 30px; height: 308.636px;"><div class="bk-toolbar-right bk-toolbar-sticky"><div class="bk-button-bar"><div class="bk-button-bar-list" type="pan"><div id="4F12BA7E3B5246B5B9CBFA337DF3F042" class="bk-toolbar-button bk-active"><div class="bk-btn-icon bk-tool-icon-pan"></div><span class="bk-tip">Pan</span></div><div id="716A4291CEA04F1F9E0B9B3296B26868" class="bk-toolbar-button"><div class="bk-btn-icon bk-tool-icon-box-zoom"></div><span class="bk-tip">Box Zoom</span></div></div><div class="bk-button-bar-list" type="scroll"><div id="096AB700CEB344A9A07B9C9C313500AE" class="bk-toolbar-button bk-active"><div class="bk-btn-icon bk-tool-icon-wheel-zoom"></div><span class="bk-tip">Wheel Zoom</span></div></div><div class="bk-button-bar-list" type="pinch"></div><div class="bk-button-bar-list" type="tap"></div><div class="bk-button-bar-list" type="press"></div><div class="bk-button-bar-list" type="rotate"></div><div class="bk-button-bar-list" type="actions"><div id="AD56CB949D7A4170833667B12E137723" class="bk-toolbar-button"><div class="bk-btn-icon bk-tool-icon-reset"></div><span class="bk-tip">Reset</span></div><div id="14BC84DC2600460B8D84A2670EDC72D1" class="bk-toolbar-button"><div class="bk-btn-icon bk-tool-icon-save"></div><span class="bk-tip">Save</span></div></div><div class="bk-button-bar-list" type="inspectors"></div><div class="bk-button-bar-list" type="help"></div></div></div></div><div id="F9817922F5064C0EBA49243D1B6F4819" class="bk-plot-wrapper" style="position: absolute; left: 0px; top: 0px; width: 844px; height: 337.6px;"><div id="585B45FC71364F94BAEFE8C603602613" class="bk-canvas-wrapper" style="touch-action: none; user-select: none; -webkit-user-drag: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); width: 844px; height: 337.6px; cursor: default;"><div class="bk-canvas-events"></div><div class="bk-canvas-overlays"><div id="49DA732C49B24B73B266BEC5FE7B8A5E" class="bk-shading" style="display: none;"></div><div id="E71F7D67E6154152B26B80863A6FECA1" class="bk-shading" style="display: none;"></div></div><a id="Nav-Local-Position-Y" class="fragment bk-plot-layout" href="https://review.px4.io/plot_app?log=0a77386a-9556-4f00-9fc8-1c9846701184#Nav-Local-Position-Y"><big>¶</big></a><canvas class="bk-canvas" width="844" height="337.6" style="width: 844px; height: 337.6px;"></canvas></div></div></div><div id="A01426987EC048E5A6B85940E3943C86" class="bk-plot-layout bk-layout-scale_width" style="position: relative; width: 844px; height: 337.6px;"><div id="B1DC41D4B0E542E0A4C17DE45E0C7463" class="bk-toolbar-wrapper" style="left: 814px; top: 28.964px; width: 30px; height: 308.636px;"><div class="bk-toolbar-right bk-toolbar-sticky"><div class="bk-button-bar"><div class="bk-button-bar-list" type="pan"><div id="FF7EBA750B654A19BAEAB75F22438AB5" class="bk-toolbar-button bk-active"><div class="bk-btn-icon bk-tool-icon-pan"></div><span class="bk-tip">Pan</span></div><div id="A01B27D7D49F4D04BCFEE686A87D5DFB" class="bk-toolbar-button"><div class="bk-btn-icon bk-tool-icon-box-zoom"></div><span class="bk-tip">Box Zoom</span></div></div><div class="bk-button-bar-list" type="scroll"><div id="0FB47C034F474F9D80C2F1F32030B8E2" class="bk-toolbar-button bk-active"><div class="bk-btn-icon bk-tool-icon-wheel-zoom"></div><span class="bk-tip">Wheel Zoom</span></div></div><div class="bk-button-bar-list" type="pinch"></div><div class="bk-button-bar-list" type="tap"></div><div class="bk-button-bar-list" type="press"></div><div class="bk-button-bar-list" type="rotate"></div><div class="bk-button-bar-list" type="actions"><div id="95C1E097863D4A1E8EE4D56E4C3F9503" class="bk-toolbar-button"><div class="bk-btn-icon bk-tool-icon-reset"></div><span class="bk-tip">Reset</span></div><div id="0EF5FA64366E4267993F1DEBB2E1392C" class="bk-toolbar-button"><div class="bk-btn-icon bk-tool-icon-save"></div><span class="bk-tip">Save</span></div></div><div class="bk-button-bar-list" type="inspectors"></div><div class="bk-button-bar-list" type="help"></div></div></div></div><div id="4AF1BA3CE41E431F9411733205F90BE1" class="bk-plot-wrapper" style="position: absolute; left: 0px; top: 0px; width: 844px; height: 337.6px;"><div id="971343512B3F4EB29A34DC417C15E8D9" class="bk-canvas-wrapper" style="touch-action: none; user-select: none; -webkit-user-drag: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); width: 844px; height: 337.6px;"><div class="bk-canvas-events"></div><div class="bk-canvas-overlays"><div id="7ED720353279466FA6A8E78A167B19E2" class="bk-shading" style="display: none;"></div><div id="77FD32B638ED42B09F3955ED6F6CA280" class="bk-shading" style="display: none;"></div></div><a id="Nav-Local-Position-Z" class="fragment bk-plot-layout" href="https://review.px4.io/plot_app?log=0a77386a-9556-4f00-9fc8-1c9846701184#Nav-Local-Position-Z"><big>¶</big></a><canvas class="bk-canvas" width="844" height="337.6" style="width: 844px; height: 337.6px;"></canvas></div></div></div><div id="EEA84AF1AB7A4800BE20178FDE29C172" class="bk-plot-layout bk-layout-scale_width" style="position: relative; width: 844px; height: 337.6px;"><div id="D321DF28909146628C60EFD1801B91FD" class="bk-toolbar-wrapper" style="left: 814px; top: 28.964px; width: 30px; height: 308.636px;"><div class="bk-toolbar-right bk-toolbar-sticky"><div class="bk-button-bar"><div class="bk-button-bar-list" type="pan"><div id="20BAF1A333234B73B962425D40EC2AF8" class="bk-toolbar-button bk-active"><div class="bk-btn-icon bk-tool-icon-pan"></div><span class="bk-tip">Pan</span></div><div id="441C454908C94A3A9952777909B3EBE6" class="bk-toolbar-button"><div class="bk-btn-icon bk-tool-icon-box-zoom"></div><span class="bk-tip">Box Zoom</span></div></div><div class="bk-button-bar-list" type="scroll"><div id="A213C80649914D778B658CDC8EDF4015" class="bk-toolbar-button bk-active"><div class="bk-btn-icon bk-tool-icon-wheel-zoom"></div><span class="bk-tip">Wheel Zoom</span></div></div><div class="bk-button-bar-list" type="pinch"></div><div class="bk-button-bar-list" type="tap"></div><div class="bk-button-bar-list" type="press"></div><div class="bk-button-bar-list" type="rotate"></div><div class="bk-button-bar-list" type="actions"><div id="D02E9097C4564DBBA6FF06C2FE808557" class="bk-toolbar-button"><div class="bk-btn-icon bk-tool-icon-reset"></div><span class="bk-tip">Reset</span></div><div id="CF0A87867909455DAC6971294C075B15" class="bk-toolbar-button"><div class="bk-btn-icon bk-tool-icon-save"></div><span class="bk-tip">Save</span></div></div><div class="bk-button-bar-list" type="inspectors"></div><div class="bk-button-bar-list" type="help"></div></div></div></div><div id="E6DB0EFBE4CD4BF89FACEE07DC55A7ED" class="bk-plot-wrapper" style="position: absolute; left: 0px; top: 0px; width: 844px; height: 337.6px;"><div id="76F9A5C0C0DE44A6A06E6B2B7D40E369" class="bk-canvas-wrapper" style="touch-action: none; user-select: none; -webkit-user-drag: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); width: 844px; height: 337.6px;"><div class="bk-canvas-events"></div><div class="bk-canvas-overlays"><div id="9E8BC1D223EE401FA0925D919E53F057" class="bk-shading" style="display: none;"></div><div id="CE84749B2E814F409F41AAFD924DCB8D" class="bk-shading" style="display: none;"></div></div><a id="Nav-Velocity" class="fragment bk-plot-layout" href="https://review.px4.io/plot_app?log=0a77386a-9556-4f00-9fc8-1c9846701184#Nav-Velocity"><big>¶</big></a><canvas class="bk-canvas" width="844" height="337.6" style="width: 844px; height: 337.6px;"></canvas></div></div></div><div id="8CB433C9B5DD44E398F18DD69265D3BD" class="bk-plot-layout bk-layout-scale_width" style="position: relative; width: 844px; height: 337.6px;"><div id="B0A274AE52BF46298842B588E39161C9" class="bk-toolbar-wrapper" style="left: 814px; top: 28.964px; width: 30px; height: 308.636px;"><div class="bk-toolbar-right bk-toolbar-sticky"><div class="bk-button-bar"><div class="bk-button-bar-list" type="pan"><div id="D8C3217AF63C4CEE9ECBCF432A718A01" class="bk-toolbar-button bk-active"><div class="bk-btn-icon bk-tool-icon-pan"></div><span class="bk-tip">Pan</span></div><div id="8B61F12B69E54E9F8622540ADFE981A0" class="bk-toolbar-button"><div class="bk-btn-icon bk-tool-icon-box-zoom"></div><span class="bk-tip">Box Zoom</span></div></div><div class="bk-button-bar-list" type="scroll"><div id="E7649B10AF3A46CEB340A350667736A2" class="bk-toolbar-button bk-active"><div class="bk-btn-icon bk-tool-icon-wheel-zoom"></div><span class="bk-tip">Wheel Zoom</span></div></div><div class="bk-button-bar-list" type="pinch"></div><div class="bk-button-bar-list" type="tap"></div><div class="bk-button-bar-list" type="press"></div><div class="bk-button-bar-list" type="rotate"></div><div class="bk-button-bar-list" type="actions"><div id="4E92B4FC273548CB80136B1EB7DA3643" class="bk-toolbar-button"><div class="bk-btn-icon bk-tool-icon-reset"></div><span class="bk-tip">Reset</span></div><div id="25E37DFF476D46DA8FBE24218D05C465" class="bk-toolbar-button"><div class="bk-btn-icon bk-tool-icon-save"></div><span class="bk-tip">Save</span></div></div><div class="bk-button-bar-list" type="inspectors"></div><div class="bk-button-bar-list" type="help"></div></div></div></div><div id="1B03384B9D484B5CA8D6A04E54216007" class="bk-plot-wrapper" style="position: absolute; left: 0px; top: 0px; width: 844px; height: 337.6px;"><div id="5E3B61A205134D13B4018FAF6CB00297" class="bk-canvas-wrapper" style="touch-action: none; user-select: none; -webkit-user-drag: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); width: 844px; height: 337.6px;"><div class="bk-canvas-events"></div><div class="bk-canvas-overlays"><div id="B36FCB8AE6284C09A493527A83BBC418" class="bk-shading" style="display: none;"></div><div id="AF54ECCDC27446188C0DBE664E6A42F8" class="bk-shading" style="display: none;"></div></div><a id="Nav-Raw-Radio-Control-Inputs" class="fragment bk-plot-layout" href="https://review.px4.io/plot_app?log=0a77386a-9556-4f00-9fc8-1c9846701184#Nav-Raw-Radio-Control-Inputs"><big>¶</big></a><canvas class="bk-canvas" width="844" height="337.6" style="width: 844px; height: 337.6px;"></canvas></div></div></div><div id="0AA90C1838EC487F9D84E3BD4B3D1806" class="bk-plot-layout bk-layout-scale_width" style="position: relative; width: 844px; height: 337.6px;"><div id="F41414E8BB8240ED88A8BB32CB60C0A2" class="bk-toolbar-wrapper" style="left: 814px; top: 28.964px; width: 30px; height: 308.636px;"><div class="bk-toolbar-right bk-toolbar-sticky"><div class="bk-button-bar"><div class="bk-button-bar-list" type="pan"><div id="C6E845EFF5464E9CAB72C9923AE351D4" class="bk-toolbar-button bk-active"><div class="bk-btn-icon bk-tool-icon-pan"></div><span class="bk-tip">Pan</span></div><div id="AF8E5AE61F394890B5112D972A5C49F2" class="bk-toolbar-button"><div class="bk-btn-icon bk-tool-icon-box-zoom"></div><span class="bk-tip">Box Zoom</span></div></div><div class="bk-button-bar-list" type="scroll"><div id="F2B3DF12AB98478097CFA9FC36E84B12" class="bk-toolbar-button bk-active"><div class="bk-btn-icon bk-tool-icon-wheel-zoom"></div><span class="bk-tip">Wheel Zoom</span></div></div><div class="bk-button-bar-list" type="pinch"></div><div class="bk-button-bar-list" type="tap"></div><div class="bk-button-bar-list" type="press"></div><div class="bk-button-bar-list" type="rotate"></div><div class="bk-button-bar-list" type="actions"><div id="5420DAC7B4AB4F608EE68322CF88D330" class="bk-toolbar-button"><div class="bk-btn-icon bk-tool-icon-reset"></div><span class="bk-tip">Reset</span></div><div id="B2F65B1116204D1386BEBF06773F3ACA" class="bk-toolbar-button"><div class="bk-btn-icon bk-tool-icon-save"></div><span class="bk-tip">Save</span></div></div><div class="bk-button-bar-list" type="inspectors"></div><div class="bk-button-bar-list" type="help"></div></div></div></div><div id="CFE3624F3405417EAC906259090656A8" class="bk-plot-wrapper" style="position: absolute; left: 0px; top: 0px; width: 844px; height: 337.6px;"><div id="7FD1B8026A6347B78734DDC97848EAD3" class="bk-canvas-wrapper" style="touch-action: none; user-select: none; -webkit-user-drag: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); width: 844px; height: 337.6px;"><div class="bk-canvas-events"></div><div class="bk-canvas-overlays"><div id="6CD1B2F5DB5B4E128F8BD489CECC47F0" class="bk-shading" style="display: none;"></div><div id="76BC542125D44960A238995E9B34AC5F" class="bk-shading" style="display: none;"></div></div><a id="Nav-Actuator-Controls-0" class="fragment bk-plot-layout" href="https://review.px4.io/plot_app?log=0a77386a-9556-4f00-9fc8-1c9846701184#Nav-Actuator-Controls-0"><big>¶</big></a><canvas class="bk-canvas" width="844" height="337.6" style="width: 844px; height: 337.6px;"></canvas></div></div></div><div id="47A5692343E64185AABD3E4D76B091CC" class="bk-plot-layout bk-layout-scale_width" style="position: relative; width: 844px; height: 337.6px;"><div id="5D73F81BA70D48A6A4115DA2169B6E37" class="bk-toolbar-wrapper" style="left: 814px; top: 28.964px; width: 30px; height: 308.636px;"><div class="bk-toolbar-right bk-toolbar-sticky"><div class="bk-button-bar"><div class="bk-button-bar-list" type="pan"><div id="FDAEFB863DF34FA89031139035E2B4CA" class="bk-toolbar-button bk-active"><div class="bk-btn-icon bk-tool-icon-pan"></div><span class="bk-tip">Pan</span></div><div id="E03DCB7F61A240AD98DB7C2462D0A7B6" class="bk-toolbar-button"><div class="bk-btn-icon bk-tool-icon-box-zoom"></div><span class="bk-tip">Box Zoom</span></div></div><div class="bk-button-bar-list" type="scroll"><div id="4A2A9DC1AF97429E8AD2FD5815F36E2B" class="bk-toolbar-button bk-active"><div class="bk-btn-icon bk-tool-icon-wheel-zoom"></div><span class="bk-tip">Wheel Zoom</span></div></div><div class="bk-button-bar-list" type="pinch"></div><div class="bk-button-bar-list" type="tap"></div><div class="bk-button-bar-list" type="press"></div><div class="bk-button-bar-list" type="rotate"></div><div class="bk-button-bar-list" type="actions"><div id="C4E8D76262C5483B96A8DC84FA682997" class="bk-toolbar-button"><div class="bk-btn-icon bk-tool-icon-reset"></div><span class="bk-tip">Reset</span></div><div id="76B145D1348245D99559066395E280F4" class="bk-toolbar-button"><div class="bk-btn-icon bk-tool-icon-save"></div><span class="bk-tip">Save</span></div></div><div class="bk-button-bar-list" type="inspectors"></div><div class="bk-button-bar-list" type="help"></div></div></div></div><div id="13EB6F1E426C439EB9488A7302AC0D71" class="bk-plot-wrapper" style="position: absolute; left: 0px; top: 0px; width: 844px; height: 337.6px;"><div id="6DFD2731103A4872A1D835F2B51C7496" class="bk-canvas-wrapper" style="touch-action: none; user-select: none; -webkit-user-drag: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); width: 844px; height: 337.6px; cursor: pointer;"><div class="bk-canvas-events"></div><div class="bk-canvas-overlays"><div id="5144A53C82BD46A3B9D261CB7D2CA153" class="bk-shading" style="display: none;"></div><div id="0A1F71F884464780A6C8AA225FF2F881" class="bk-shading" style="display: none;"></div></div><a id="Nav-Actuator-Outputs-Main" class="fragment bk-plot-layout" href="https://review.px4.io/plot_app?log=0a77386a-9556-4f00-9fc8-1c9846701184#Nav-Actuator-Outputs-Main"><big>¶</big></a><canvas class="bk-canvas" width="844" height="337.6" style="width: 844px; height: 337.6px;"></canvas></div></div></div><div id="0028E6AED5E74897B3D6CE625ABD6EF7" class="bk-plot-layout bk-layout-scale_width" style="position: relative; width: 844px; height: 337.6px;"><div id="41B2C161EDBB45D3A08552DCA8B14397" class="bk-toolbar-wrapper" style="left: 814px; top: 28.964px; width: 30px; height: 308.636px;"><div class="bk-toolbar-right bk-toolbar-sticky"><div class="bk-button-bar"><div class="bk-button-bar-list" type="pan"><div id="5E4A042D695541F7897E02C4DC7BC3C4" class="bk-toolbar-button bk-active"><div class="bk-btn-icon bk-tool-icon-pan"></div><span class="bk-tip">Pan</span></div><div id="FCED0543A26A475AA9F45D4A4E00C8F1" class="bk-toolbar-button"><div class="bk-btn-icon bk-tool-icon-box-zoom"></div><span class="bk-tip">Box Zoom</span></div></div><div class="bk-button-bar-list" type="scroll"><div id="EB13A7A5CEF743B0A33E0C2436923F7F" class="bk-toolbar-button bk-active"><div class="bk-btn-icon bk-tool-icon-wheel-zoom"></div><span class="bk-tip">Wheel Zoom</span></div></div><div class="bk-button-bar-list" type="pinch"></div><div class="bk-button-bar-list" type="tap"></div><div class="bk-button-bar-list" type="press"></div><div class="bk-button-bar-list" type="rotate"></div><div class="bk-button-bar-list" type="actions"><div id="004E760963E343B4905533097D32F409" class="bk-toolbar-button"><div class="bk-btn-icon bk-tool-icon-reset"></div><span class="bk-tip">Reset</span></div><div id="0FB940ED591F46D09E165878F9E90E97" class="bk-toolbar-button"><div class="bk-btn-icon bk-tool-icon-save"></div><span class="bk-tip">Save</span></div></div><div class="bk-button-bar-list" type="inspectors"></div><div class="bk-button-bar-list" type="help"></div></div></div></div><div id="23A5B6AB58714EE086A34086BEF641C5" class="bk-plot-wrapper" style="position: absolute; left: 0px; top: 0px; width: 844px; height: 337.6px;"><div id="6D14DC04971B45AD8CF86E5913BD867C" class="bk-canvas-wrapper" style="touch-action: none; user-select: none; -webkit-user-drag: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); width: 844px; height: 337.6px; cursor: default;"><div class="bk-canvas-events"></div><div class="bk-canvas-overlays"><div id="43DD76D9CF29437B9F7E03954606859F" class="bk-shading" style="display: none;"></div></div><a id="Nav-Raw-Acceleration" class="fragment bk-plot-layout" href="https://review.px4.io/plot_app?log=0a77386a-9556-4f00-9fc8-1c9846701184#Nav-Raw-Acceleration"><big>¶</big></a><canvas class="bk-canvas" width="844" height="337.6" style="width: 844px; height: 337.6px;"></canvas></div></div></div><div id="B831BE32F55B4AEC8EE330F65987538F" class="bk-plot-layout bk-layout-scale_width" style="position: relative; width: 844px; height: 337.6px;"><div id="36F10EF7D5EB4630A8B277A743DF833E" class="bk-toolbar-wrapper" style="left: 814px; top: 28.964px; width: 30px; height: 308.636px;"><div class="bk-toolbar-right bk-toolbar-sticky"><div class="bk-button-bar"><div class="bk-button-bar-list" type="pan"><div id="C8BA0A83A489420A8BD22D80A7104D23" class="bk-toolbar-button bk-active"><div class="bk-btn-icon bk-tool-icon-pan"></div><span class="bk-tip">Pan</span></div><div id="3098968700AB4E0B964A00BB29A77413" class="bk-toolbar-button"><div class="bk-btn-icon bk-tool-icon-box-zoom"></div><span class="bk-tip">Box Zoom</span></div></div><div class="bk-button-bar-list" type="scroll"><div id="043105321C1D4F59A5A604362E4F290F" class="bk-toolbar-button bk-active"><div class="bk-btn-icon bk-tool-icon-wheel-zoom"></div><span class="bk-tip">Wheel Zoom</span></div></div><div class="bk-button-bar-list" type="pinch"></div><div class="bk-button-bar-list" type="tap"></div><div class="bk-button-bar-list" type="press"></div><div class="bk-button-bar-list" type="rotate"></div><div class="bk-button-bar-list" type="actions"><div id="FF1D98C37ED345CDAC0E50B16F3EF473" class="bk-toolbar-button"><div class="bk-btn-icon bk-tool-icon-reset"></div><span class="bk-tip">Reset</span></div><div id="C987E03750BE4177A6AA23C326EBF24C" class="bk-toolbar-button"><div class="bk-btn-icon bk-tool-icon-save"></div><span class="bk-tip">Save</span></div></div><div class="bk-button-bar-list" type="inspectors"></div><div class="bk-button-bar-list" type="help"></div></div></div></div><div id="0C3C7B9709394F78903FAE2D38C9D88F" class="bk-plot-wrapper" style="position: absolute; left: 0px; top: 0px; width: 844px; height: 337.6px;"><div id="8C7DF80A67D24917BB872F5D38BFE5B0" class="bk-canvas-wrapper" style="touch-action: none; user-select: none; -webkit-user-drag: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); width: 844px; height: 337.6px;"><div class="bk-canvas-events"></div><div class="bk-canvas-overlays"><div id="782A695233A149BF996CE8ADD8B2D83B" class="bk-shading" style="display: none;"></div></div><a id="Nav-Raw-Angular-Speed-Gyroscope" class="fragment bk-plot-layout" href="https://review.px4.io/plot_app?log=0a77386a-9556-4f00-9fc8-1c9846701184#Nav-Raw-Angular-Speed-Gyroscope"><big>¶</big></a><canvas class="bk-canvas" width="844" height="337.6" style="width: 844px; height: 337.6px;"></canvas></div></div></div><div id="829537FB08C94A3EAD07CFA231957CA2" class="bk-plot-layout bk-layout-scale_width" style="position: relative; width: 844px; height: 337.6px;"><div id="A224AF360CCF43D3803D5239D11E73B6" class="bk-toolbar-wrapper" style="left: 814px; top: 28.964px; width: 30px; height: 308.636px;"><div class="bk-toolbar-right bk-toolbar-sticky"><div class="bk-button-bar"><div class="bk-button-bar-list" type="pan"><div id="2FF9976638C04943A34B4F4C118A2847" class="bk-toolbar-button bk-active"><div class="bk-btn-icon bk-tool-icon-pan"></div><span class="bk-tip">Pan</span></div><div id="B5165758D7C44FF786F2C3913D5612E4" class="bk-toolbar-button"><div class="bk-btn-icon bk-tool-icon-box-zoom"></div><span class="bk-tip">Box Zoom</span></div></div><div class="bk-button-bar-list" type="scroll"><div id="9A5A9EEE15124D0B9F045B16A026147E" class="bk-toolbar-button bk-active"><div class="bk-btn-icon bk-tool-icon-wheel-zoom"></div><span class="bk-tip">Wheel Zoom</span></div></div><div class="bk-button-bar-list" type="pinch"></div><div class="bk-button-bar-list" type="tap"></div><div class="bk-button-bar-list" type="press"></div><div class="bk-button-bar-list" type="rotate"></div><div class="bk-button-bar-list" type="actions"><div id="8A37BA92ADED43849CD12EA54EF75DDE" class="bk-toolbar-button"><div class="bk-btn-icon bk-tool-icon-reset"></div><span class="bk-tip">Reset</span></div><div id="F2267017E5E945EA9132AF433BAEE976" class="bk-toolbar-button"><div class="bk-btn-icon bk-tool-icon-save"></div><span class="bk-tip">Save</span></div></div><div class="bk-button-bar-list" type="inspectors"></div><div class="bk-button-bar-list" type="help"></div></div></div></div><div id="DC09655B54F84715A4E52A6EA00FDBDC" class="bk-plot-wrapper" style="position: absolute; left: 0px; top: 0px; width: 844px; height: 337.6px;"><div id="464896C7CB8547C297FDDE7137E8AF2E" class="bk-canvas-wrapper" style="touch-action: none; user-select: none; -webkit-user-drag: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); width: 844px; height: 337.6px;"><div class="bk-canvas-events"></div><div class="bk-canvas-overlays"><div id="CC7D65FED4274DBCB5B80D90D1AC2031" class="bk-shading" style="display: none;"></div></div><a id="Nav-Raw-Magnetic-Field-Strength" class="fragment bk-plot-layout" href="https://review.px4.io/plot_app?log=0a77386a-9556-4f00-9fc8-1c9846701184#Nav-Raw-Magnetic-Field-Strength"><big>¶</big></a><canvas class="bk-canvas" width="844" height="337.6" style="width: 844px; height: 337.6px;"></canvas></div></div></div><div id="712D21F8438C40C3A9319E4F2EC53834" class="bk-plot-layout bk-layout-scale_width" style="position: relative; width: 844px; height: 337.6px;"><div id="2FF152BA2DA646979DC8A16927F3B608" class="bk-toolbar-wrapper" style="left: 814px; top: 28.964px; width: 30px; height: 308.636px;"><div class="bk-toolbar-right bk-toolbar-sticky"><div class="bk-button-bar"><div class="bk-button-bar-list" type="pan"><div id="62C38688A199474B8B7E395546EC7BFF" class="bk-toolbar-button bk-active"><div class="bk-btn-icon bk-tool-icon-pan"></div><span class="bk-tip">Pan</span></div><div id="4F66D236371F485E8706A582FE02E556" class="bk-toolbar-button"><div class="bk-btn-icon bk-tool-icon-box-zoom"></div><span class="bk-tip">Box Zoom</span></div></div><div class="bk-button-bar-list" type="scroll"><div id="F6D9A513BD6E4722AA8A93C7846D183D" class="bk-toolbar-button bk-active"><div class="bk-btn-icon bk-tool-icon-wheel-zoom"></div><span class="bk-tip">Wheel Zoom</span></div></div><div class="bk-button-bar-list" type="pinch"></div><div class="bk-button-bar-list" type="tap"></div><div class="bk-button-bar-list" type="press"></div><div class="bk-button-bar-list" type="rotate"></div><div class="bk-button-bar-list" type="actions"><div id="83117C6125B9440D91FC05DC18A98C1C" class="bk-toolbar-button"><div class="bk-btn-icon bk-tool-icon-reset"></div><span class="bk-tip">Reset</span></div><div id="19A9D7BC8D524B3F83FEAD4970FEDDED" class="bk-toolbar-button"><div class="bk-btn-icon bk-tool-icon-save"></div><span class="bk-tip">Save</span></div></div><div class="bk-button-bar-list" type="inspectors"></div><div class="bk-button-bar-list" type="help"></div></div></div></div><div id="68459DD166E04A1B9E381837A7F16913" class="bk-plot-wrapper" style="position: absolute; left: 0px; top: 0px; width: 844px; height: 337.6px;"><div id="36F11DDB0B6C433797B7B7306F5CCC1A" class="bk-canvas-wrapper" style="touch-action: none; user-select: none; -webkit-user-drag: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); width: 844px; height: 337.6px;"><div class="bk-canvas-events"></div><div class="bk-canvas-overlays"><div id="74C5C2E52E1E42C0A11711A2FD455190" class="bk-shading" style="display: none;"></div></div><a id="Nav-GPS-Uncertainty" class="fragment bk-plot-layout" href="https://review.px4.io/plot_app?log=0a77386a-9556-4f00-9fc8-1c9846701184#Nav-GPS-Uncertainty"><big>¶</big></a><canvas class="bk-canvas" width="844" height="337.6" style="width: 844px; height: 337.6px;"></canvas></div></div></div><div id="63D120AAD3474ACFA563C0DAA6FE4925" class="bk-plot-layout bk-layout-scale_width" style="position: relative; width: 844px; height: 337.6px;"><div id="F2D079BADF1B4DE4A25C682FF0372131" class="bk-toolbar-wrapper" style="left: 814px; top: 28.964px; width: 30px; height: 308.636px;"><div class="bk-toolbar-right bk-toolbar-sticky"><div class="bk-button-bar"><div class="bk-button-bar-list" type="pan"><div id="BE0F125472B141539F9CDD8842CF2472" class="bk-toolbar-button bk-active"><div class="bk-btn-icon bk-tool-icon-pan"></div><span class="bk-tip">Pan</span></div><div id="A7895A2A1B0142DD8C147C8C6607E94E" class="bk-toolbar-button"><div class="bk-btn-icon bk-tool-icon-box-zoom"></div><span class="bk-tip">Box Zoom</span></div></div><div class="bk-button-bar-list" type="scroll"><div id="B4E048B252084704AC815F8128B54F9F" class="bk-toolbar-button bk-active"><div class="bk-btn-icon bk-tool-icon-wheel-zoom"></div><span class="bk-tip">Wheel Zoom</span></div></div><div class="bk-button-bar-list" type="pinch"></div><div class="bk-button-bar-list" type="tap"></div><div class="bk-button-bar-list" type="press"></div><div class="bk-button-bar-list" type="rotate"></div><div class="bk-button-bar-list" type="actions"><div id="74FBF8A885024E7591ED804B22D5C5EA" class="bk-toolbar-button"><div class="bk-btn-icon bk-tool-icon-reset"></div><span class="bk-tip">Reset</span></div><div id="FB5EC8E5409E4DB88B7CB39D45157371" class="bk-toolbar-button"><div class="bk-btn-icon bk-tool-icon-save"></div><span class="bk-tip">Save</span></div></div><div class="bk-button-bar-list" type="inspectors"></div><div class="bk-button-bar-list" type="help"></div></div></div></div><div id="E030025BB0AD4386B6C130834F06C7AD" class="bk-plot-wrapper" style="position: absolute; left: 0px; top: 0px; width: 844px; height: 337.6px;"><div id="7F8AA65FB40F4C83BA412217925C1D7F" class="bk-canvas-wrapper" style="touch-action: none; user-select: none; -webkit-user-drag: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); width: 844px; height: 337.6px;"><div class="bk-canvas-events"></div><div class="bk-canvas-overlays"><div id="D755371F88784308851CB2174A3F13FF" class="bk-shading" style="display: none;"></div></div><a id="Nav-GPS-Noise-_-Jamming" class="fragment bk-plot-layout" href="https://review.px4.io/plot_app?log=0a77386a-9556-4f00-9fc8-1c9846701184#Nav-GPS-Noise-_-Jamming"><big>¶</big></a><canvas class="bk-canvas" width="844" height="337.6" style="width: 844px; height: 337.6px;"></canvas></div></div></div><div id="5EBFCE5600A64CCDB6ECF51CC8DBF357" class="bk-plot-layout bk-layout-scale_width" style="position: relative; width: 844px; height: 337.6px;"><div id="CC36622124434EF59F85F93D02B4FC0E" class="bk-toolbar-wrapper" style="left: 814px; top: 28.964px; width: 30px; height: 308.636px;"><div class="bk-toolbar-right bk-toolbar-sticky"><div class="bk-button-bar"><div class="bk-button-bar-list" type="pan"><div id="F9C6987673F34CE99E3385D2682D472F" class="bk-toolbar-button bk-active"><div class="bk-btn-icon bk-tool-icon-pan"></div><span class="bk-tip">Pan</span></div><div id="AEA9DB9CD74A4F7EABA8AE5BD92792C0" class="bk-toolbar-button"><div class="bk-btn-icon bk-tool-icon-box-zoom"></div><span class="bk-tip">Box Zoom</span></div></div><div class="bk-button-bar-list" type="scroll"><div id="9B5E25D767A34C7BB4FE9A374A7EBE59" class="bk-toolbar-button bk-active"><div class="bk-btn-icon bk-tool-icon-wheel-zoom"></div><span class="bk-tip">Wheel Zoom</span></div></div><div class="bk-button-bar-list" type="pinch"></div><div class="bk-button-bar-list" type="tap"></div><div class="bk-button-bar-list" type="press"></div><div class="bk-button-bar-list" type="rotate"></div><div class="bk-button-bar-list" type="actions"><div id="EAD2A2B604264699BB4861A050AF0E7E" class="bk-toolbar-button"><div class="bk-btn-icon bk-tool-icon-reset"></div><span class="bk-tip">Reset</span></div><div id="AF37A4ACF3C94C5C94BFE9AB57204932" class="bk-toolbar-button"><div class="bk-btn-icon bk-tool-icon-save"></div><span class="bk-tip">Save</span></div></div><div class="bk-button-bar-list" type="inspectors"></div><div class="bk-button-bar-list" type="help"></div></div></div></div><div id="FC499B501B1B424FB3AC31DB4FEC79CB" class="bk-plot-wrapper" style="position: absolute; left: 0px; top: 0px; width: 844px; height: 337.6px;"><div id="E1FE8FABC5584DA491B6425D2F88AB8F" class="bk-canvas-wrapper" style="touch-action: none; user-select: none; -webkit-user-drag: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); width: 844px; height: 337.6px;"><div class="bk-canvas-events"></div><div class="bk-canvas-overlays"><div id="2599A3F18FAB4E4F87343796CEE48A46" class="bk-shading" style="display: none;"></div></div><a id="Nav-Thrust-and-Magnetic-Field" class="fragment bk-plot-layout" href="https://review.px4.io/plot_app?log=0a77386a-9556-4f00-9fc8-1c9846701184#Nav-Thrust-and-Magnetic-Field"><big>¶</big></a><canvas class="bk-canvas" width="844" height="337.6" style="width: 844px; height: 337.6px;"></canvas></div></div></div><div id="B3A267CCBF684741A339AEFADB067AA5" class="bk-plot-layout bk-layout-scale_width" style="position: relative; width: 844px; height: 337.6px;"><div id="97317566A3F349E09F6D74E6EBD5A697" class="bk-toolbar-wrapper" style="left: 814px; top: 28.964px; width: 30px; height: 308.636px;"><div class="bk-toolbar-right bk-toolbar-sticky"><div class="bk-button-bar"><div class="bk-button-bar-list" type="pan"><div id="18FC6CC7164345F2905FF7530B9AC7FC" class="bk-toolbar-button bk-active"><div class="bk-btn-icon bk-tool-icon-pan"></div><span class="bk-tip">Pan</span></div><div id="0A560A00B6EF4FE9B812B37713B5D679" class="bk-toolbar-button"><div class="bk-btn-icon bk-tool-icon-box-zoom"></div><span class="bk-tip">Box Zoom</span></div></div><div class="bk-button-bar-list" type="scroll"><div id="D0F96D479E8C4E77BA5DAB0FAB0175EE" class="bk-toolbar-button bk-active"><div class="bk-btn-icon bk-tool-icon-wheel-zoom"></div><span class="bk-tip">Wheel Zoom</span></div></div><div class="bk-button-bar-list" type="pinch"></div><div class="bk-button-bar-list" type="tap"></div><div class="bk-button-bar-list" type="press"></div><div class="bk-button-bar-list" type="rotate"></div><div class="bk-button-bar-list" type="actions"><div id="87234DFAC7CB4219A672DBA194423F56" class="bk-toolbar-button"><div class="bk-btn-icon bk-tool-icon-reset"></div><span class="bk-tip">Reset</span></div><div id="0EF6303F59DC4C43B72E1328248FCC13" class="bk-toolbar-button"><div class="bk-btn-icon bk-tool-icon-save"></div><span class="bk-tip">Save</span></div></div><div class="bk-button-bar-list" type="inspectors"></div><div class="bk-button-bar-list" type="help"></div></div></div></div><div id="1565331E38134528AA9229773369D054" class="bk-plot-wrapper" style="position: absolute; left: 0px; top: 0px; width: 844px; height: 337.6px;"><div id="08864C07D2394DB1825D7C8306CCB020" class="bk-canvas-wrapper" style="touch-action: none; user-select: none; -webkit-user-drag: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); width: 844px; height: 337.6px;"><div class="bk-canvas-events"></div><div class="bk-canvas-overlays"><div id="686907E5F4A2467290C95D3F0F6519AC" class="bk-shading" style="display: none;"></div></div><a id="Nav-Power" class="fragment bk-plot-layout" href="https://review.px4.io/plot_app?log=0a77386a-9556-4f00-9fc8-1c9846701184#Nav-Power"><big>¶</big></a><canvas class="bk-canvas" width="844" height="337.6" style="width: 844px; height: 337.6px;"></canvas></div></div></div><div id="829AE5031EE846BCBA0CA4854BEBBC02" class="bk-plot-layout bk-layout-scale_width" style="position: relative; width: 844px; height: 337.6px;"><div id="40E7CB0CC5644EEBB099786B964D7AE6" class="bk-toolbar-wrapper" style="left: 814px; top: 28.964px; width: 30px; height: 308.636px;"><div class="bk-toolbar-right bk-toolbar-sticky"><div class="bk-button-bar"><div class="bk-button-bar-list" type="pan"><div id="CD113D68D518477B9B8CC818F6FE5260" class="bk-toolbar-button bk-active"><div class="bk-btn-icon bk-tool-icon-pan"></div><span class="bk-tip">Pan</span></div><div id="E10823E73563472696D53A4847D55462" class="bk-toolbar-button"><div class="bk-btn-icon bk-tool-icon-box-zoom"></div><span class="bk-tip">Box Zoom</span></div></div><div class="bk-button-bar-list" type="scroll"><div id="079A8D2351194D7399472F03A963B4EB" class="bk-toolbar-button bk-active"><div class="bk-btn-icon bk-tool-icon-wheel-zoom"></div><span class="bk-tip">Wheel Zoom</span></div></div><div class="bk-button-bar-list" type="pinch"></div><div class="bk-button-bar-list" type="tap"></div><div class="bk-button-bar-list" type="press"></div><div class="bk-button-bar-list" type="rotate"></div><div class="bk-button-bar-list" type="actions"><div id="581AAC618C7244A9AD068BEB7473ADBB" class="bk-toolbar-button"><div class="bk-btn-icon bk-tool-icon-reset"></div><span class="bk-tip">Reset</span></div><div id="F974E6B2D9DB4A229F5BD0114952DEF5" class="bk-toolbar-button"><div class="bk-btn-icon bk-tool-icon-save"></div><span class="bk-tip">Save</span></div></div><div class="bk-button-bar-list" type="inspectors"></div><div class="bk-button-bar-list" type="help"></div></div></div></div><div id="6FACB027E7244CC0984932087ECC0295" class="bk-plot-wrapper" style="position: absolute; left: 0px; top: 0px; width: 844px; height: 337.6px;"><div id="03F77BDEB4FF488E841B5A0BCCD47D93" class="bk-canvas-wrapper" style="touch-action: none; user-select: none; -webkit-user-drag: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); width: 844px; height: 337.6px;"><div class="bk-canvas-events"></div><div class="bk-canvas-overlays"><div id="68C7E4827E4F40D1959125B3F804E998" class="bk-shading" style="display: none;"></div></div><a id="Nav-Estimator-Watchdog" class="fragment bk-plot-layout" href="https://review.px4.io/plot_app?log=0a77386a-9556-4f00-9fc8-1c9846701184#Nav-Estimator-Watchdog"><big>¶</big></a><canvas class="bk-canvas" width="844" height="337.6" style="width: 844px; height: 337.6px;"></canvas></div></div></div><div id="FAE028346E5945F28BC9D068BE1149C2" class="bk-plot-layout bk-layout-scale_width" style="position: relative; width: 844px; height: 337.6px;"><div id="5B08B2A5C3814E0C90179AC980910BF1" class="bk-toolbar-wrapper" style="left: 814px; top: 28.964px; width: 30px; height: 308.636px;"><div class="bk-toolbar-right bk-toolbar-sticky"><div class="bk-button-bar"><div class="bk-button-bar-list" type="pan"><div id="74545030594842B8A2A723D261E784BF" class="bk-toolbar-button bk-active"><div class="bk-btn-icon bk-tool-icon-pan"></div><span class="bk-tip">Pan</span></div><div id="10244B403EF04D02ADBA5039848B6C3C" class="bk-toolbar-button"><div class="bk-btn-icon bk-tool-icon-box-zoom"></div><span class="bk-tip">Box Zoom</span></div></div><div class="bk-button-bar-list" type="scroll"><div id="B9F9458FDAE04C9FBDC043EBA7095701" class="bk-toolbar-button bk-active"><div class="bk-btn-icon bk-tool-icon-wheel-zoom"></div><span class="bk-tip">Wheel Zoom</span></div></div><div class="bk-button-bar-list" type="pinch"></div><div class="bk-button-bar-list" type="tap"></div><div class="bk-button-bar-list" type="press"></div><div class="bk-button-bar-list" type="rotate"></div><div class="bk-button-bar-list" type="actions"><div id="DAE3B7B2BD134F79B09EA7F7E5F3B35B" class="bk-toolbar-button"><div class="bk-btn-icon bk-tool-icon-reset"></div><span class="bk-tip">Reset</span></div><div id="932CF17F80254D2C921AB1EE87E9BFD1" class="bk-toolbar-button"><div class="bk-btn-icon bk-tool-icon-save"></div><span class="bk-tip">Save</span></div></div><div class="bk-button-bar-list" type="inspectors"></div><div class="bk-button-bar-list" type="help"></div></div></div></div><div id="3474F7F793474F74895F2033CDB9C1B8" class="bk-plot-wrapper" style="position: absolute; left: 0px; top: 0px; width: 844px; height: 337.6px;"><div id="EEFF2B55654349A0B841B6F26A9253D0" class="bk-canvas-wrapper" style="touch-action: none; user-select: none; -webkit-user-drag: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); width: 844px; height: 337.6px;"><div class="bk-canvas-events"></div><div class="bk-canvas-overlays"><div id="36525F39356C42ABB2068FD38807EA7F" class="bk-shading" style="display: none;"></div></div><a id="Nav-RC-Quality" class="fragment bk-plot-layout" href="https://review.px4.io/plot_app?log=0a77386a-9556-4f00-9fc8-1c9846701184#Nav-RC-Quality"><big>¶</big></a><canvas class="bk-canvas" width="844" height="337.6" style="width: 844px; height: 337.6px;"></canvas></div></div></div><div id="789BE0C034C641278BE9CF8DDD254010" class="bk-plot-layout bk-layout-scale_width" style="position: relative; width: 844px; height: 337.6px;"><div id="3BB48789E42E4101A5D93C85FF2174D9" class="bk-toolbar-wrapper" style="left: 814px; top: 28.964px; width: 30px; height: 308.636px;"><div class="bk-toolbar-right bk-toolbar-sticky"><div class="bk-button-bar"><div class="bk-button-bar-list" type="pan"><div id="C4EFE784DBC04939B68D3AF72F841FF9" class="bk-toolbar-button bk-active"><div class="bk-btn-icon bk-tool-icon-pan"></div><span class="bk-tip">Pan</span></div><div id="6DE177777E3048268E488F00FD3A9780" class="bk-toolbar-button"><div class="bk-btn-icon bk-tool-icon-box-zoom"></div><span class="bk-tip">Box Zoom</span></div></div><div class="bk-button-bar-list" type="scroll"><div id="C7A2D1DDFBA0415A8F076856C0B184BF" class="bk-toolbar-button bk-active"><div class="bk-btn-icon bk-tool-icon-wheel-zoom"></div><span class="bk-tip">Wheel Zoom</span></div></div><div class="bk-button-bar-list" type="pinch"></div><div class="bk-button-bar-list" type="tap"></div><div class="bk-button-bar-list" type="press"></div><div class="bk-button-bar-list" type="rotate"></div><div class="bk-button-bar-list" type="actions"><div id="B1AD0D6ABB4A4608AFDA34EEC9EC5F06" class="bk-toolbar-button"><div class="bk-btn-icon bk-tool-icon-reset"></div><span class="bk-tip">Reset</span></div><div id="637A7194C7824F55A02171E16A1C99FB" class="bk-toolbar-button"><div class="bk-btn-icon bk-tool-icon-save"></div><span class="bk-tip">Save</span></div></div><div class="bk-button-bar-list" type="inspectors"></div><div class="bk-button-bar-list" type="help"></div></div></div></div><div id="6B2D3B8CA84043F8ACF80F4D22EE1FBA" class="bk-plot-wrapper" style="position: absolute; left: 0px; top: 0px; width: 844px; height: 337.6px;"><div id="B7C74F7147534922959BC1B67A132BD8" class="bk-canvas-wrapper" style="touch-action: none; user-select: none; -webkit-user-drag: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); width: 844px; height: 337.6px;"><div class="bk-canvas-events"></div><div class="bk-canvas-overlays"><div id="2E860ADFB32746BB9F341E5EC31DEE50" class="bk-shading" style="display: none;"></div><div id="F2FC83FF020C4470A39A981071804D3E" style="position: absolute; display: none;"></div><div id="4034850190D747649ED256031AE3653D" style="position: absolute; display: none;"></div><div id="E5A2A457457149EF86A65DCB711D2017" class="bk-shading" style="display: none;"></div></div><a id="Nav-CPU-_-RAM" class="fragment bk-plot-layout" href="https://review.px4.io/plot_app?log=0a77386a-9556-4f00-9fc8-1c9846701184#Nav-CPU-_-RAM"><big>¶</big></a><canvas class="bk-canvas" width="844" height="337.6" style="width: 844px; height: 337.6px;"></canvas></div></div></div><div id="2FC27AAF50354E3495EE38D5E37FECAB" class="bk-plot-layout bk-layout-scale_width" style="position: relative; width: 844px; height: 337.6px;"><div id="0F577281CC8D4C2DB4B253B4AD1DE2AE" class="bk-toolbar-wrapper" style="left: 814px; top: 28.964px; width: 30px; height: 308.636px;"><div class="bk-toolbar-right bk-toolbar-sticky"><div class="bk-button-bar"><div class="bk-button-bar-list" type="pan"><div id="64F0F9E9DDD44980A57D999719C28045" class="bk-toolbar-button bk-active"><div class="bk-btn-icon bk-tool-icon-pan"></div><span class="bk-tip">Pan</span></div><div id="F9D56232D5F34D14B1FF5E6422E17550" class="bk-toolbar-button"><div class="bk-btn-icon bk-tool-icon-box-zoom"></div><span class="bk-tip">Box Zoom</span></div></div><div class="bk-button-bar-list" type="scroll"><div id="D7A5F6B0E6C7423FAA51E446ABF29D40" class="bk-toolbar-button bk-active"><div class="bk-btn-icon bk-tool-icon-wheel-zoom"></div><span class="bk-tip">Wheel Zoom</span></div></div><div class="bk-button-bar-list" type="pinch"></div><div class="bk-button-bar-list" type="tap"></div><div class="bk-button-bar-list" type="press"></div><div class="bk-button-bar-list" type="rotate"></div><div class="bk-button-bar-list" type="actions"><div id="FBFAC384312E4C098F09A9C5EDE1A176" class="bk-toolbar-button"><div class="bk-btn-icon bk-tool-icon-reset"></div><span class="bk-tip">Reset</span></div><div id="4DA3EF67FA7A40529AEB505138D4090D" class="bk-toolbar-button"><div class="bk-btn-icon bk-tool-icon-save"></div><span class="bk-tip">Save</span></div></div><div class="bk-button-bar-list" type="inspectors"></div><div class="bk-button-bar-list" type="help"></div></div></div></div><div id="94273D833AF74893A1A555793EE99F24" class="bk-plot-wrapper" style="position: absolute; left: 0px; top: 0px; width: 844px; height: 337.6px;"><div id="5E70177F8DA44FBA82DA7D9B7AEDBA07" class="bk-canvas-wrapper" style="touch-action: none; user-select: none; -webkit-user-drag: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); width: 844px; height: 337.6px;"><div class="bk-canvas-events"></div><div class="bk-canvas-overlays"><div id="11A2C5E056A54B8BACC56880B1C6AD1D" class="bk-shading" style="display: none;"></div></div><a id="Nav-Sampling-Regularity-of-Sensor-Data" class="fragment bk-plot-layout" href="https://review.px4.io/plot_app?log=0a77386a-9556-4f00-9fc8-1c9846701184#Nav-Sampling-Regularity-of-Sensor-Data"><big>¶</big></a><canvas class="bk-canvas" width="844" height="337.6" style="width: 844px; height: 337.6px;"></canvas></div></div></div><div id="1680DD105CE345F695BB26428FD7C100" class="bk-widget-box bk-layout-scale_width" style="width: 824px;"><div id="C7E7FA3B23DE4216980A4A304564BB3F" class="bk-widget bk-layout-fixed" style="width: 420px;"><div class="bk-markup"><div><b>Non-default Parameters</b> (except RC and sensor calibration)</div></div></div><div id="86B271BBDAA74EA2902FBC1D95CA08F9" class="bk-data-table slickgrid_374943 bk-ui-widget slickgrid_633056 slickgrid_833934" style="width: 840px; height: 300px; overflow: hidden; outline: 0px; position: relative;"><div tabindex="0" hidefocus="" style="position:fixed;width:0;height:0;top:0;left:0;outline:0;"></div><div class="bk-slick-header bk-ui-state-default" style="overflow:hidden;position:relative;"><div class="bk-slick-header-columns bk-ui-sortable" style="left: -1000px; width: 1840px;" unselectable="on"><div class="bk-ui-state-default bk-slick-header-column bk-slick-header-sortable" id="slickgrid_833934BDA166B4F25C4CC8BB90B1CF658C6CCD" title="" style="width: 31px;"><span class="bk-slick-column-name">#</span><span class="bk-slick-sort-indicator"></span></div><div class="bk-ui-state-default bk-slick-header-column" id="slickgrid_833934146199E0D28146D8AEBC821195794630" title="" style="width: 146px;"><span class="bk-slick-column-name">Name</span><div class="bk-slick-resizable-handle"></div></div><div class="bk-ui-state-default bk-slick-header-column" id="slickgrid_8339344327A933076D484CA22B3C6C7D5CB6CF" title="" style="width: 108px;"><span class="bk-slick-column-name">Value</span><div class="bk-slick-resizable-handle"></div></div><div class="bk-ui-state-default bk-slick-header-column" id="slickgrid_83393453C1A885C5FB427A875DE0870CFA4028" title="" style="width: 71px;"><span class="bk-slick-column-name">Default</span><div class="bk-slick-resizable-handle"></div></div><div class="bk-ui-state-default bk-slick-header-column" id="slickgrid_833934D769D35DC63444DA92D07E21236DDC28" title="" style="width: 51px;"><span class="bk-slick-column-name">Min</span><div class="bk-slick-resizable-handle"></div></div><div class="bk-ui-state-default bk-slick-header-column" id="slickgrid_833934CBD6CF714E674E2A94958250663A1036" title="" style="width: 51px;"><span class="bk-slick-column-name">Max</span><div class="bk-slick-resizable-handle"></div></div><div class="bk-ui-state-default bk-slick-header-column" id="slickgrid_833934DCFCBE41EEF2420F8D755BF5247120E2" title="" style="width: 302px;"><span class="bk-slick-column-name">Description</span></div></div></div><div class="bk-slick-headerrow bk-ui-state-default" style="overflow: hidden; position: relative; display: none;"><div class="bk-slick-headerrow-columns" style="width: 823px;"></div><div style="display: block; height: 1px; position: absolute; top: 0px; left: 0px; width: 840px;"></div></div><div class="bk-slick-top-panel-scroller bk-ui-state-default" style="overflow: hidden; position: relative; display: none;"><div class="bk-slick-top-panel" style="width:10000px"></div></div><div class="bk-slick-viewport" style="width: 100%; overflow: auto; outline: 0px; position: relative; height: 273px;"><div class="grid-canvas" style="width: 823px; height: 2450px;"><div class="bk-ui-widget-content bk-slick-row even" style="top:2100px"><div class="bk-slick-cell l0 r0 bk-cell-index">84</div><div class="bk-slick-cell l1 r1"><span style="text-align: left;">PWM_MAIN_TRIM6</span></div><div class="bk-slick-cell l2 r2"><span style="text-align: left;">0</span></div><div class="bk-slick-cell l3 r3"><span style="text-align: left;"></span></div><div class="bk-slick-cell l4 r4"><span style="text-align: left;"></span></div><div class="bk-slick-cell l5 r5"><span style="text-align: left;"></span></div><div class="bk-slick-cell l6 r6"><span style="text-align: left;">(unknown)</span></div></div><div class="bk-ui-widget-content bk-slick-row odd" style="top:2125px"><div class="bk-slick-cell l0 r0 bk-cell-index">85</div><div class="bk-slick-cell l1 r1"><span style="text-align: left;">PWM_MAIN_TRIM7</span></div><div class="bk-slick-cell l2 r2"><span style="text-align: left;">0</span></div><div class="bk-slick-cell l3 r3"><span style="text-align: left;"></span></div><div class="bk-slick-cell l4 r4"><span style="text-align: left;"></span></div><div class="bk-slick-cell l5 r5"><span style="text-align: left;"></span></div><div class="bk-slick-cell l6 r6"><span style="text-align: left;">(unknown)</span></div></div><div class="bk-ui-widget-content bk-slick-row even" style="top:2150px"><div class="bk-slick-cell l0 r0 bk-cell-index">86</div><div class="bk-slick-cell l1 r1"><span style="text-align: left;">PWM_MAIN_TRIM8</span></div><div class="bk-slick-cell l2 r2"><span style="text-align: left;">0</span></div><div class="bk-slick-cell l3 r3"><span style="text-align: left;"></span></div><div class="bk-slick-cell l4 r4"><span style="text-align: left;"></span></div><div class="bk-slick-cell l5 r5"><span style="text-align: left;"></span></div><div class="bk-slick-cell l6 r6"><span style="text-align: left;">(unknown)</span></div></div><div class="bk-ui-widget-content bk-slick-row odd" style="top:2175px"><div class="bk-slick-cell l0 r0 bk-cell-index">87</div><div class="bk-slick-cell l1 r1"><span style="text-align: left;">PWM_RATE</span></div><div class="bk-slick-cell l2 r2"><span style="text-align: left;">50</span></div><div class="bk-slick-cell l3 r3"><span style="text-align: left;">400</span></div><div class="bk-slick-cell l4 r4"><span style="text-align: left;">-1</span></div><div class="bk-slick-cell l5 r5"><span style="text-align: left;">2000</span></div><div class="bk-slick-cell l6 r6"><span style="text-align: left;">Set the PWM output frequency for the main outputs</span></div></div><div class="bk-ui-widget-content bk-slick-row even" style="top:2200px"><div class="bk-slick-cell l0 r0 bk-cell-index">88</div><div class="bk-slick-cell l1 r1"><span style="text-align: left;">PWM_SBUS_MODE</span></div><div class="bk-slick-cell l2 r2"><span style="text-align: left;">0</span></div><div class="bk-slick-cell l3 r3"><span style="text-align: left;"></span></div><div class="bk-slick-cell l4 r4"><span style="text-align: left;"></span></div><div class="bk-slick-cell l5 r5"><span style="text-align: left;"></span></div><div class="bk-slick-cell l6 r6"><span style="text-align: left;">(unknown)</span></div></div><div class="bk-ui-widget-content bk-slick-row odd" style="top:2225px"><div class="bk-slick-cell l0 r0 bk-cell-index">89</div><div class="bk-slick-cell l1 r1"><span style="text-align: left;">RTL_DESCEND_ALT</span></div><div class="bk-slick-cell l2 r2"><span style="text-align: left;">100</span></div><div class="bk-slick-cell l3 r3"><span style="text-align: left;">30</span></div><div class="bk-slick-cell l4 r4"><span style="text-align: left;">2</span></div><div class="bk-slick-cell l5 r5"><span style="text-align: left;">100</span></div><div class="bk-slick-cell l6 r6"><span style="text-align: left;">RTL loiter altitude</span></div></div><div class="bk-ui-widget-content bk-slick-row even" style="top:2250px"><div class="bk-slick-cell l0 r0 bk-cell-index">90</div><div class="bk-slick-cell l1 r1"><span style="text-align: left;">RTL_RETURN_ALT</span></div><div class="bk-slick-cell l2 r2"><span style="text-align: left;">100</span></div><div class="bk-slick-cell l3 r3"><span style="text-align: left;">60</span></div><div class="bk-slick-cell l4 r4"><span style="text-align: left;">0</span></div><div class="bk-slick-cell l5 r5"><span style="text-align: left;">150</span></div><div class="bk-slick-cell l6 r6"><span style="text-align: left;">RTL altitude</span></div></div><div class="bk-ui-widget-content bk-slick-row odd" style="top:2275px"><div class="bk-slick-cell l0 r0 bk-cell-index">91</div><div class="bk-slick-cell l1 r1"><span style="text-align: left;">SENS_BOARD_X_OFF</span></div><div class="bk-slick-cell l2 r2"><span style="text-align: left;">0.43460771441459656</span></div><div class="bk-slick-cell l3 r3"><span style="text-align: left;">0.0</span></div><div class="bk-slick-cell l4 r4"><span style="text-align: left;"></span></div><div class="bk-slick-cell l5 r5"><span style="text-align: left;"></span></div><div class="bk-slick-cell l6 r6"><span style="text-align: left;">Board rotation X (Roll) offset</span></div></div><div class="bk-ui-widget-content bk-slick-row even" style="top:2300px"><div class="bk-slick-cell l0 r0 bk-cell-index">92</div><div class="bk-slick-cell l1 r1"><span style="text-align: left;">SENS_BOARD_Y_OFF</span></div><div class="bk-slick-cell l2 r2"><span style="text-align: left;">1.3867671489715576</span></div><div class="bk-slick-cell l3 r3"><span style="text-align: left;">0.0</span></div><div class="bk-slick-cell l4 r4"><span style="text-align: left;"></span></div><div class="bk-slick-cell l5 r5"><span style="text-align: left;"></span></div><div class="bk-slick-cell l6 r6"><span style="text-align: left;">Board rotation Y (Pitch) offset</span></div></div><div class="bk-ui-widget-content bk-slick-row odd" style="top:2325px"><div class="bk-slick-cell l0 r0 bk-cell-index">93</div><div class="bk-slick-cell l1 r1"><span style="text-align: left;">SYS_AUTOSTART</span></div><div class="bk-slick-cell l2 r2"><span style="text-align: left;">4100</span></div><div class="bk-slick-cell l3 r3"><span style="text-align: left;">0</span></div><div class="bk-slick-cell l4 r4"><span style="text-align: left;">0</span></div><div class="bk-slick-cell l5 r5"><span style="text-align: left;">99999</span></div><div class="bk-slick-cell l6 r6"><span style="text-align: left;">Auto-start script index</span></div></div><div class="bk-ui-widget-content bk-slick-row even" style="top:2350px"><div class="bk-slick-cell l0 r0 bk-cell-index">94</div><div class="bk-slick-cell l1 r1"><span style="text-align: left;">SYS_FMU_TASK</span></div><div class="bk-slick-cell l2 r2"><span style="text-align: left;">0</span></div><div class="bk-slick-cell l3 r3"><span style="text-align: left;"></span></div><div class="bk-slick-cell l4 r4"><span style="text-align: left;"></span></div><div class="bk-slick-cell l5 r5"><span style="text-align: left;"></span></div><div class="bk-slick-cell l6 r6"><span style="text-align: left;">(unknown)</span></div></div><div class="bk-ui-widget-content bk-slick-row odd" style="top:2375px"><div class="bk-slick-cell l0 r0 bk-cell-index">95</div><div class="bk-slick-cell l1 r1"><span style="text-align: left;">SYS_HITL</span></div><div class="bk-slick-cell l2 r2"><span style="text-align: left;">0</span></div><div class="bk-slick-cell l3 r3"><span style="text-align: left;"></span></div><div class="bk-slick-cell l4 r4"><span style="text-align: left;"></span></div><div class="bk-slick-cell l5 r5"><span style="text-align: left;"></span></div><div class="bk-slick-cell l6 r6"><span style="text-align: left;">(unknown)</span></div></div><div class="bk-ui-widget-content bk-slick-row even" style="top:2400px"><div class="bk-slick-cell l0 r0 bk-cell-index">96</div><div class="bk-slick-cell l1 r1"><span style="text-align: left;">SYS_RESTART_TYPE</span></div><div class="bk-slick-cell l2 r2"><span style="text-align: left;">0</span></div><div class="bk-slick-cell l3 r3"><span style="text-align: left;">2</span></div><div class="bk-slick-cell l4 r4"><span style="text-align: left;">0</span></div><div class="bk-slick-cell l5 r5"><span style="text-align: left;">2</span></div><div class="bk-slick-cell l6 r6"><span style="text-align: left;">Set restart type</span></div></div><div class="bk-ui-widget-content bk-slick-row odd" style="top:2425px"><div class="bk-slick-cell l0 r0 bk-cell-index">97</div><div class="bk-slick-cell l1 r1"><span style="text-align: left;">VT_B_DEC_MSS</span></div><div class="bk-slick-cell l2 r2"><span style="text-align: left;">2</span></div><div class="bk-slick-cell l3 r3"><span style="text-align: left;"></span></div><div class="bk-slick-cell l4 r4"><span style="text-align: left;"></span></div><div class="bk-slick-cell l5 r5"><span style="text-align: left;"></span></div><div class="bk-slick-cell l6 r6"><span style="text-align: left;">(unknown)</span></div></div></div></div><div tabindex="0" hidefocus="" style="position:fixed;width:0;height:0;top:0;left:0;outline:0;"></div></div></div><div id="2963CE5815864BC5858D3855D74D8FAE" class="bk-widget-box bk-layout-scale_width" style="width: 824px;"><div id="3223952B822642499CEEC8EDE433E4FF" class="bk-widget bk-layout-fixed" style="width: 420px;"><div class="bk-markup"><div><b>Logged Messages</b></div></div></div><div id="B902AAF6223B4CF29503897B1E8387AD" class="bk-data-table slickgrid_419679 bk-ui-widget slickgrid_376847 slickgrid_307415" style="width: 840px; height: 300px; overflow: hidden; outline: 0px; position: relative;"><div tabindex="0" hidefocus="" style="position:fixed;width:0;height:0;top:0;left:0;outline:0;"></div><div class="bk-slick-header bk-ui-state-default" style="overflow:hidden;position:relative;"><div class="bk-slick-header-columns bk-ui-sortable" style="left: -1000px; width: 1857px;" unselectable="on"><div class="bk-ui-state-default bk-slick-header-column bk-slick-header-sortable" id="slickgrid_307415D93D2852628D44F69638286EC06F87B7" title="" style="width: 31px;"><span class="bk-slick-column-name">#</span><span class="bk-slick-sort-indicator"></span></div><div class="bk-ui-state-default bk-slick-header-column" id="slickgrid_30741576BF0590D21B4CA28F86C170F8BE4224" title="" style="width: 111px;"><span class="bk-slick-column-name">Time</span><div class="bk-slick-resizable-handle"></div></div><div class="bk-ui-state-default bk-slick-header-column" id="slickgrid_3074152994CB10C22144569BE57BE5D214CCF8" title="" style="width: 73px;"><span class="bk-slick-column-name">Level</span><div class="bk-slick-resizable-handle"></div></div><div class="bk-ui-state-default bk-slick-header-column" id="slickgrid_30741561483D5C779C49DD90CE93278EAECE8E" title="" style="width: 589px;"><span class="bk-slick-column-name">Message</span></div></div></div><div class="bk-slick-headerrow bk-ui-state-default" style="overflow: hidden; position: relative; display: none;"><div class="bk-slick-headerrow-columns" style="width: 840px;"></div><div style="display: block; height: 1px; position: absolute; top: 0px; left: 0px; width: 840px;"></div></div><div class="bk-slick-top-panel-scroller bk-ui-state-default" style="overflow: hidden; position: relative; display: none;"><div class="bk-slick-top-panel" style="width:10000px"></div></div><div class="bk-slick-viewport" style="width: 100%; overflow: auto; outline: 0px; position: relative; height: 273px;"><div class="grid-canvas" style="width: 840px; height: 256px;"></div></div><div tabindex="0" hidefocus="" style="position:fixed;width:0;height:0;top:0;left:0;outline:0;"></div></div></div><div id="0D4BC4263F284C7F9E67440AEFD44A6E" class="bk-widget-box bk-layout-scale_width" style="width: 824px;"><div id="6F9407095914458E8ED9B46AE6582BF3" class="bk-widget bk-layout-fixed" style="width: 756px;"><div class="bk-markup"><div>
+<button class="btn btn-common" data-toggle="collapse" style="min-width:0;" data-target="#show-additional-data" aria-expanded="true">Show additional Data</button>
+<div id="show-additional-data" class="collapse in" aria-expanded="true" style="">
+<h4>Processes</h4><p>Pre Flight:<br></p><pre> PID COMMAND                   CPU(ms) CPU(%)  USED/STACK PRIO(BASE) STATE 
+   0 Idle Task                   16751 51.097   604/  748   0 (  0)  READY 
+   1 hpwork                       1109  4.291   888/ 1780 249 (249)  w:sig 
+   2 lpwork                         80  0.099   640/ 1780  50 ( 50)  w:sig 
+   3 init                        12891  0.000  1672/ 2484 100 (100)  w:sem 
+ 100 gps                            64  0.299   952/ 1580 220 (220)  w:sig 
+ 104 dataman                       151  0.000   704/ 1180  90 ( 90)  w:sem 
+ 156 sensors                      5363  5.688  1464/ 1964 249 (249)  w:sem 
+ 158 commander                     325  0.898  2704/ 3652 140 (140)  w:sig 
+ 159 commander_low_prio              0  0.000   560/ 2996  50 ( 50)  w:sem 
+ 172 px4io                         822  3.293  1000/ 1484 251 (251)  w:sem 
+ 180 mavlink_if0                   592  2.195  1656/ 2428 100 (100)  w:sig 
+ 181 mavlink_rcv_if0               311  0.399  1808/ 2140 175 (175)  w:sem 
+ 198 mavlink_if1                   368  1.097  1656/ 2388 100 (100)  w:sig 
+ 199 mavlink_rcv_if1               105  0.399  1552/ 2140 175 (175)  w:sem 
+ 243 log_writer_file                16  0.898   544/ 1068  60 ( 60)  w:sem 
+ 242 logger                        255  7.485  3040/ 3540 245 (245)  RUN   
+ 330 ekf2                         3120 13.273  5104/ 5876 250 (250)  w:sem 
+ 333 mc_att_control                962  4.191  1176/ 1676 251 (251)  w:sem 
+ 335 mc_pos_control                606  2.894   584/ 1876 250 (250)  w:sem 
+ 337 humming                      4572  0.099   488/ 2012 100 (100)  w:sem 
+ 345 navigator                       5  0.099   872/ 1772 105 (105)  w:sem 
+
+Processes: 21 total, 2 running, 19 sleeping
+CPU usage: 47.60% tasks, 1.30% sched, 51.10% idle
+DMA Memory: 5120 total, 1536 used 1536 peak
+Uptime: 29.220s total, 16.752s idle</pre><p></p><p>Post Flight:<br></p><pre> PID COMMAND                   CPU(ms) CPU(%)  USED/STACK PRIO(BASE) STATE 
+   0 Idle Task                   38130 53.400   604/  748   0 (  0)  READY 
+   1 hpwork                       2833  4.200   888/ 1780 249 (249)  w:sig 
+   2 lpwork                        129  0.200   640/ 1780  50 ( 50)  w:sig 
+   3 init                        12891  0.000  1672/ 2484 100 (100)  w:sem 
+ 100 gps                           157  0.300   952/ 1580 220 (220)  w:sem 
+ 104 dataman                       151  0.000   704/ 1180  90 ( 90)  w:sem 
+ 156 sensors                      7646  5.800  1464/ 1964 249 (249)  w:sem 
+ 158 commander                     764  1.000  2704/ 3652 140 (140)  w:sig 
+ 159 commander_low_prio              2  0.000   560/ 2996  50 ( 50)  w:sem 
+ 172 px4io                        2148  3.200  1000/ 1484 251 (251)  w:sem 
+ 180 mavlink_if0                  1530  2.300  1656/ 2428 100 (100)  w:sig 
+ 181 mavlink_rcv_if0               476  0.500  1808/ 2140 175 (175)  w:sem 
+ 198 mavlink_if1                   838  1.200  1656/ 2388 100 (100)  w:sig 
+ 199 mavlink_rcv_if1               270  0.300  1552/ 2140 175 (175)  w:sem 
+ 243 log_writer_file               417  1.100   560/ 1068  60 ( 60)  w:sem 
+ 242 logger                       2286  4.900  3040/ 3540 245 (245)  RUN   
+ 330 ekf2                         8508 13.300  5104/ 5876 250 (250)  w:sem 
+ 333 mc_att_control               2605  4.099  1176/ 1676 251 (251)  w:sem 
+ 335 mc_pos_control               1815  3.000   584/ 1876 250 (250)  w:sem 
+ 337 humming                      4611  0.100   488/ 2012 100 (100)  w:sem 
+ 345 navigator                       8  0.000   872/ 1772 105 (105)  w:sem 
+
+Processes: 21 total, 2 running, 19 sleeping
+CPU usage: 45.50% tasks, 1.10% sched, 53.40% idle
+DMA Memory: 5120 total, 1536 used 1536 peak
+Uptime: 69.481s total, 38.131s idle</pre><p></p><h4>Performance Counters</h4><p>Pre Flight:<br></p><pre>navigator: 23 events, 1989us elapsed, 86us avg, min 31us max 945us 188.531us rms
+mc_att_control: 5866 events, 717857us elapsed, 122us avg, min 20us max 425us 30.613us rms
+ctl_lat: 0 events, 0us elapsed, 0us avg, min 0us max 0us 0.000us rms
+logger_sd_fsync: 0 events, 0us elapsed, 0us avg, min 0us max 0us 0.000us rms
+logger_sd_write: 3 events, 60795us elapsed, 20265us avg, min 11us max 30661us 17542.541us rms
+mavlink_txe: 0 events
+mavlink_el: 0 events, 0us elapsed, 0us avg, min 0us max 0us 0.000us rms
+mavlink_txe: 17 events
+mavlink_el: 2048 events, 353784us elapsed, 172us avg, min 43us max 2818us 285.722us rms
+mavlink_txe: 450 events
+mavlink_el: 2303 events, 785862us elapsed, 341us avg, min 67us max 6355us 488.064us rms
+io latency: 5815 events, 9036769162us elapsed, 1554044us avg, min 3213us max 9747211us 3046142.250us rms
+io write: 0 events, 0us elapsed, 0us avg, min 0us max 0us 0.000us rms
+io update: 5854 events, 3900155us elapsed, 666us avg, min 261us max 17708us 784.220us rms
+io_txns: 12059 events, 3660794us elapsed, 303us avg, min 131us max 1663us 105.229us rms
+stack_check: 71 events, 989us elapsed, 13us avg, min 1us max 119us 19.278us rms
+sensors: 6041 events, 5093591us elapsed, 843us avg, min 78us max 6564us 503.700us rms
+lsm303d_acc_dupe: 4240 events
+lsm303d_bad_val: 0 events
+lsm303d_bad_reg: 0 events
+lsm303d_mag_read: 2445 events, 56141us elapsed, 22us avg, min 22us max 24us 0.390us rms
+lsm303d_acc_read: 23282 events, 673799us elapsed, 28us avg, min 19us max 35us 4.585us rms
+l3gd20_dupe: 15925 events
+l3gd20_bad_reg: 0 events
+l3gd20_err: 0 events
+l3gd20_read: 34192 events, 925356us elapsed, 27us avg, min 20us max 36us 5.741us rms
+ctrl_latency: 5816 events, 979266us elapsed, 168us avg, min 107us max 427us 35.349us rms
+mpu6k_duplicates: 6299 events
+mpu6k_reset: 0 events
+mpu6k_good_trans: 24249 events
+mpu6k_bad_reg: 0 events
+mpu6k_bad_trans: 0 events
+mpu6k_read: 30548 events, 1556054us elapsed, 50us avg, min 31us max 75us 12.380us rms
+mpu6k_gyro_read: 0 events
+mpu6k_acc_read: 12 events
+hmc5883_conf_err: 0 events
+hmc5883_rng_err: 0 events
+hmc5883_com_err: 0 events
+hmc5883_read: 1131 events, 1437100us elapsed, 1270us avg, min 866us max 3572us 645.471us rms
+adc_samples: 24390 events, 68545us elapsed, 2us avg, min 2us max 3us 0.392us rms
+ms5611_com_err: 0 events
+ms5611_measure: 2352 events, 19172us elapsed, 8us avg, min 6us max 284us 10.955us rms
+ms5611_read: 2351 events, 196374us elapsed, 83us avg, min 10us max 436us 63.892us rms
+dma_alloc: 5 events</pre><p></p><p>Post Flight:<br></p><pre>navigator: 41 events, 1673us elapsed, 40us avg, min 34us max 115us 140.619us rms
+mc_att_control: 10300 events, 1346948us elapsed, 130us avg, min 111us max 384us 34.573us rms
+ctl_lat: 0 events, 0us elapsed, 0us avg, min 0us max 0us 0.000us rms
+logger_sd_fsync: 4 events, 870158us elapsed, 217539us avg, min 173616us max 282849us 50492.438us rms
+logger_sd_write: 423 events, 3865357us elapsed, 9137us avg, min 9us max 206405us 19531.600us rms
+mavlink_txe: 0 events
+mavlink_el: 0 events, 0us elapsed, 0us avg, min 0us max 0us 0.000us rms
+mavlink_txe: 0 events
+mavlink_el: 3486 events, 588142us elapsed, 168us avg, min 58us max 3649us 354.011us rms
+mavlink_txe: 0 events
+mavlink_el: 3873 events, 1450604us elapsed, 374us avg, min 103us max 5353us 663.562us rms
+io latency: 10301 events, 38684706us elapsed, 3755us avg, min 3248us max 4763us 2290116.750us rms
+io write: 0 events, 0us elapsed, 0us avg, min 0us max 0us 0.000us rms
+io update: 10301 events, 6728956us elapsed, 653us avg, min 261us max 2742us 954.620us rms
+io_txns: 20759 events, 6283072us elapsed, 302us avg, min 145us max 696us 130.121us rms
+stack_check: 130 events, 1237us elapsed, 9us avg, min 1us max 63us 17.460us rms
+sensors: 10301 events, 9343364us elapsed, 907us avg, min 437us max 2650us 602.658us rms
+lsm303d_acc_dupe: 7175 events
+lsm303d_bad_val: 0 events
+lsm303d_bad_reg: 0 events
+lsm303d_mag_read: 4127 events, 94410us elapsed, 22us avg, min 22us max 24us 0.566us rms
+lsm303d_acc_read: 39309 events, 1137679us elapsed, 28us avg, min 19us max 35us 5.787us rms
+l3gd20_dupe: 26911 events
+l3gd20_bad_reg: 0 events
+l3gd20_err: 0 events
+l3gd20_read: 57727 events, 1562366us elapsed, 27us avg, min 20us max 36us 7.252us rms
+ctrl_latency: 10302 events, 1808547us elapsed, 175us avg, min 139us max 426us 42.191us rms
+mpu6k_duplicates: 10348 events
+mpu6k_reset: 0 events
+mpu6k_good_trans: 41246 events
+mpu6k_bad_reg: 0 events
+mpu6k_bad_trans: 0 events
+mpu6k_read: 51594 events, 2635901us elapsed, 51us avg, min 31us max 74us 15.628us rms
+mpu6k_gyro_read: 0 events
+mpu6k_acc_read: 0 events
+hmc5883_conf_err: 1 events
+hmc5883_rng_err: 1 events
+hmc5883_com_err: 0 events
+hmc5883_read: 1784 events, 2355704us elapsed, 1320us avg, min 867us max 4070us 871.765us rms
+adc_samples: 41270 events, 116177us elapsed, 2us avg, min 2us max 3us 0.492us rms
+ms5611_com_err: 0 events
+ms5611_measure: 3730 events, 29797us elapsed, 7us avg, min 6us max 336us 13.593us rms
+ms5611_read: 3730 events, 313546us elapsed, 84us avg, min 10us max 451us 82.228us rms
+dma_alloc: 0 events</pre><p></p>
+</div>
+</div></div></div></div></div></div>
+        </div>
+
+
+
+    <footer id="footer">
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="copyright-text text-center">
+						<p>© 2017 PX4 Team. Source on <a href="https://github.com/PX4/flight_review">github</a>.
+
+						 Plotted with the awesome <a target="_blank" href="http://bokeh.pydata.org/">bokeh</a> library.
+
+						</p>
+                    </div>
+                </div>
+            </div>
+    </footer>
+    </div>
+
+
+
+
+    
+<script type="text/javascript">
+    (function() {
+  var fn = function() {
+    Bokeh.safely(function() {
+      var docs_json = {};
+      var render_items = [{"elementid":"64c9b6fb-0d68-4c78-bfb4-d6ce25fadaa4","sessionid":"MPomKuR7WbsqSE89gKG8CWJBJtWjwdZOA8L31hlcB1Yw","use_for_title":true}];
+      
+      Bokeh.embed.embed_items(docs_json, render_items);
+    });
+  };
+  if (document.readyState != "loading") fn();
+  else document.addEventListener("DOMContentLoaded", fn);
+})();
+
+</script>
+	<script src="./log_0_2017-9-6-18-41-40_files/jquery.min.js.download"></script>
+    <script type="text/javascript" src="./log_0_2017-9-6-18-41-40_files/bootstrap.min.js.download"></script>
+    <script type="text/javascript">
+    
+$.fn.scrollView = function () {
+    return this.each(function () {
+        $('html, body').animate({
+            scrollTop: $(this).offset().top
+        }, 500);
+    });
+}
+
+var do_not_scroll = false;
+function navigate(fragment) {
+	// jump to the fragment and handle the sticky header properly
+	do_not_scroll = true;
+	window.location.hash = fragment;
+
+	setTimeout(function() {
+		//hide sticky header
+		var elSelector		= '#header',
+		$element		= $( elSelector );
+		elHeight		= $element.outerHeight();
+		$element.css( 'top', -elHeight );
+		do_not_scroll = false;
+	}, 10);
+}
+
+
+
+function setupPlots() {
+	// do necessary setup after plots are loaded
+
+	var plot_ids = [
+
+
+	 "df8352e2-de36-4c99-9d6c-09831cc67673"
+
+	, "873651af-4729-4134-b733-35bf8f22d233"
+
+	, "bed8c824-b242-41a6-9ae7-cddd8360e4a6"
+
+	, "d16c6bdb-0eb6-485f-8ab2-a5a178d07981"
+
+	, "d464e3b2-4a58-40a6-92f3-541cebdf0fc6"
+
+	, "d66514aa-529d-4ad0-b32b-ee9e100a7b12"
+
+	, "a04b1908-c4d2-4f4b-bf17-7c20f78d99c4"
+
+	, "bb93347b-7a6c-498b-b340-6d41cf29f26a"
+
+	, "b67ff68b-5379-4389-bb05-46ed49dd8fcc"
+
+	, "813c45de-4a43-4b2c-8df4-e06f9a70af6f"
+
+	, "921ee430-94d5-40d9-8cc4-beee53e5f35d"
+
+	, "1cc9d133-14e3-4d5f-a046-ab9244f98a0a"
+
+	, "25d6e1e0-b777-47ba-94f0-0a137aa6ef34"
+
+	, "fe3f0019-3362-4e0d-924b-95ca4cc37607"
+
+	, "73a181c3-c9f6-4634-9555-355043bf88b3"
+
+	, "4a90c5f0-d2db-4604-b7bb-c6d8c2544e14"
+
+	, "549b1924-0319-4a26-8e7f-df94fed3c9b4"
+
+	, "8463e0c9-0464-4322-8f96-2a27d071ec7f"
+
+	, "b7d8f4b0-51cd-44db-b321-e0058453e85a"
+
+	, "c0ced52c-6b3c-4abd-851a-35150d015b29"
+
+	, "fb555a2f-5fc7-47d8-8e17-3a482f2ce680"
+
+	, "823a9735-1b20-4561-9b01-d2c87d68321e"
+
+	, "fa0e2aef-364c-4376-a867-52a1d4e82090"
+
+	, "a6bb6ef5-c417-4899-8747-f3dad4687ed7"
+
+	, "2ee51485-3ac0-4faf-b259-5e60e0eb21f7"
+
+	];
+
+	var plot_fragments = [
+
+
+	 "Nav-Altitude-Estimate"
+
+	, "Nav-Roll-Angle"
+
+	, "Nav-Roll-Angular-Rate"
+
+	, "Nav-Pitch-Angle"
+
+	, "Nav-Pitch-Angular-Rate"
+
+	, "Nav-Yaw-Angle"
+
+	, "Nav-Yaw-Angular-Rate"
+
+	, "Nav-Local-Position-X"
+
+	, "Nav-Local-Position-Y"
+
+	, "Nav-Local-Position-Z"
+
+	, "Nav-Velocity"
+
+	, "Nav-Raw-Radio-Control-Inputs"
+
+	, "Nav-Actuator-Controls-0"
+
+	, "Nav-Actuator-Outputs-Main"
+
+	, "Nav-Raw-Acceleration"
+
+	, "Nav-Raw-Angular-Speed-Gyroscope"
+
+	, "Nav-Raw-Magnetic-Field-Strength"
+
+	, "Nav-GPS-Uncertainty"
+
+	, "Nav-GPS-Noise-_-Jamming"
+
+	, "Nav-Thrust-and-Magnetic-Field"
+
+	, "Nav-Power"
+
+	, "Nav-Estimator-Watchdog"
+
+	, "Nav-RC-Quality"
+
+	, "Nav-CPU-_-RAM"
+
+	, "Nav-Sampling-Regularity-of-Sensor-Data"
+
+	];
+
+
+	// add fragment anchor links to each plot (placement via CSS)
+	function foreach_plot_view(view, fn) {
+		if (view.model instanceof Bokeh.Models("Plot")) {
+			fn(view);
+		} else if (view.model instanceof Bokeh.Models("LayoutDOM")) {
+			for (var id in view.child_views) {
+				foreach_plot_view(view.child_views[id], fn);
+			}
+		}
+	}
+	var root = Bokeh.index[Object.keys(Bokeh.index)[0]];
+	foreach_plot_view(root, function(plot_view) {
+		index_of = plot_ids.indexOf(plot_view.model.id)
+		if (index_of >= 0) {
+			var a = $('<a id="'+plot_fragments[index_of]+'" '+
+					'class="fragment bk-plot-layout"' +
+					' href="#'+plot_fragments[index_of]+'"><big>&para;</big></a>');
+			$(plot_view.plot_canvas_view.canvas_view.canvas_el).before(a);
+		}
+	});
+
+
+	$('#loading-plots').hide();
+
+	// because bokeh dynamically loads the content after startup, jumping to
+	// fragments does not work on page load, so we do it manually
+	var cur_frag = window.location.hash.substr(1);
+	if (cur_frag.length > 0) {
+		window.setTimeout(function() { $('#'+cur_frag).scrollView(); }, 1000);
+	}
+}
+
+function renderingCompleteCheck() {
+
+    function done() {
+		console.log('rendering done');
+		setupPlots();
+    }
+
+	// wait until the document exists
+	if (window.Bokeh.documents.length == 0) {
+		window.setTimeout(renderingCompleteCheck, 100);
+		return;
+	}
+
+    var doc = window.Bokeh.documents[0];
+
+    if (doc.is_idle) {
+		done();
+	} else {
+		doc.idle.connect(done);
+	}
+}
+
+$(function() { //on startup
+	window.setTimeout(renderingCompleteCheck, 1);
+});
+
+$(document).ready(function(){
+	// initialize the tooltip's
+	$('[data-toggle="tooltip"]').tooltip();
+});
+
+/* resize the plots */
+function setSize(size) {
+	console.log(size);
+
+	var sizes = { small: 0.8, medium: 1, large: 1.4, xlarge: 2.1 };
+	for(key in sizes) {
+		$('#size-'+key+'-menu').removeClass('active');
+	}
+	$('#size-'+size+'-menu').addClass('active');
+
+	var slider_value = sizes[size];
+
+	$(document.body).css('max-width', Math.floor(900*slider_value)+'px')
+
+	if (slider_value < 1) slider_value = 1;
+	if (slider_value > 2) slider_value = 2;
+	$(document.body).css('width', Math.floor(75+(slider_value-1)*15)+'%')
+
+	/* google maps resize */
+	if (typeof(g_google_map) !== "undefined" && g_google_map != null) {
+		google.maps.event.trigger(g_google_map, "resize");
+	}
+
+	/* get the bokeh document. If we had a bokeh object, like a plot, we
+	could use plot.document. The following works w/o, but maybe there's a
+	simpler way? */
+	bokeh_doc = Bokeh.index[Object.keys(Bokeh.index)[0]].model.document
+	bokeh_doc.resize(); //trigger resize event
+}
+
+ 
+
+
+ 
+
+// auto-hide sticky header when scrolling down, show when scrolling up
+// source: http://osvaldas.info/auto-hide-sticky-header
+;( function( $, window, document, undefined )
+		{
+			'use strict';
+
+			var elSelector		= '#header',
+			$element		= $( elSelector );
+
+			if( !$element.length ) return true;
+
+			var elHeight		= 0,
+			elTop			= 0,
+			$document		= $( document ),
+			dHeight			= 0,
+			$window			= $( window ),
+			wHeight			= 0,
+			wScrollCurrent	= 0,
+			wScrollBefore	= 0,
+			wScrollDiff		= 0;
+
+			$window.on( 'scroll', function()
+					{
+						elHeight		= $element.outerHeight();
+						dHeight			= $document.height();
+						wHeight			= $window.height();
+						wScrollCurrent	= $window.scrollTop();
+						wScrollDiff		= wScrollBefore - wScrollCurrent;
+						elTop			= parseInt( $element.css( 'top' ) ) + wScrollDiff;
+
+						if (do_not_scroll) {
+							wScrollBefore = wScrollCurrent;
+							return;
+						}
+
+						if( wScrollCurrent <= 0 ) // scrolled to the very top; element sticks to the top
+							$element.css( 'top', 0 );
+
+						else if( wScrollDiff > 0 ) // scrolled up; element slides in
+							$element.css( 'top', elTop > 0 ? 0 : elTop );
+
+						else if( wScrollDiff < 0 ) // scrolled down
+						{
+							// scrolled down; element slides out
+							$element.css( 'top', Math.abs( elTop ) > elHeight ? -elHeight : elTop );
+						}
+
+						wScrollBefore = wScrollCurrent;
+					});
+
+		})( jQuery, window, document );
+    </script>
+
+
+</body></html>
