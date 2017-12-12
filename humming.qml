@@ -40,9 +40,29 @@ FactPanel {
  onClicked: controller.sendCommand(1, 0, 0, 1, 0, 0, 0, 0, 0, 0)
  }
  QGCButton {
- text: "Liquid position 0.5"
+ text: "Liquid position 100%"
  width:      ScreenTools.defaultFontPixelWidth * 23
- onClicked: controller.sendCommand(1, 0, 0, 6, 0, 0, 0.5, 0, 0, 0)
+ onClicked: controller.sendCommand(1, 0, 0, 6, 0, 0, 1, 0, 0, 0)
+ }	
+ QGCButton {
+ text: "Liquid position 80%"
+ width:      ScreenTools.defaultFontPixelWidth * 23
+ onClicked: controller.sendCommand(1, 0, 0, 6, 0, 0, 0.8, 0, 0, 0)
+ }	
+ QGCButton {
+ text: "Liquid position 60%"
+ width:      ScreenTools.defaultFontPixelWidth * 23
+ onClicked: controller.sendCommand(1, 0, 0, 6, 0, 0, 0.6, 0, 0, 0)
+ }	
+ QGCButton {
+ text: "Liquid position 40%"
+ width:      ScreenTools.defaultFontPixelWidth * 23
+ onClicked: controller.sendCommand(1, 0, 0, 6, 0, 0, 0.4, 0, 0, 0)
+ }	
+ QGCButton {
+ text: "Liquid position 20%"
+ width:      ScreenTools.defaultFontPixelWidth * 23
+ onClicked: controller.sendCommand(1, 0, 0, 6, 0, 0, 0.2, 0, 0, 0)
  }	
  QGCButton {
  text: "Liquid back"
@@ -58,6 +78,11 @@ FactPanel {
  text: "Probe back"
  width:      ScreenTools.defaultFontPixelWidth * 23
  onClicked: controller.sendCommand(1, 0, 0, 3, 0, 0, 0, 0, 0, 0)
+ }
+ QGCButton {
+ text: "task 1"
+ width:      ScreenTools.defaultFontPixelWidth * 23
+ onClicked: controller.sendCommand(1, 0, 0, 8, 0, 0, 0, 0, 0, 0)
  }
  } 
  // Your own custom changes end here - everything else below is always required
